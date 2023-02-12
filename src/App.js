@@ -3,6 +3,7 @@ import { MenuList, MenuListItem, Separator, styleReset } from "react95";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import "./App.css";
 import BottomBar from "./components/BottomBar";
+import DesktopApp from "./components/DesktopApp";
 
 /* Pick a theme of your choice */
 import original from "react95/dist/themes/original";
@@ -34,12 +35,7 @@ const App = () => (
   <div>
     <GlobalStyles />
     <ThemeProvider theme={original}>
-      <MenuList>
-        <MenuListItem>🎤 Sing</MenuListItem>
-        <MenuListItem>💃🏻 Dance</MenuListItem>
-        <Separator />
-        <MenuListItem disabled>😴 Sleep</MenuListItem>
-      </MenuList>
+      <DesktopApp />
       <BottomBar />
     </ThemeProvider>
   </div>

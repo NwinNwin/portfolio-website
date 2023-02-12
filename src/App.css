@@ -1,6 +1,9 @@
 body {
   background-image: url("wallpaper.png");
-  width: 100%;
+  background-color: rgb(172, 156, 156);
+  background-blend-mode: multiply;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .myAppbar {

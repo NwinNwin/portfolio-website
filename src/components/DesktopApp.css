@@ -1,0 +1,24 @@
+.desktop-app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-left: 4%;
+  width: 10%;
+  height: 100vh;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.desktop-logo {
+  width: 4rem;
+}
+
+.desktop-app div {
+  margin-bottom: 40%;
+}
+
+.desktop-app h2 {
+  margin-top: 2%;
+}
