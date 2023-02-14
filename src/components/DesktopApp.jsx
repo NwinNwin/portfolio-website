@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../images/profile.svg";
 import projects from "../images/projects.svg";
 import comp from "../images/comp.svg";
-import achievement from "../images/achievement.svg";
+import memories from "../images/memories.png";
 import "./DesktopApp.css";
 
 export default function DesktopApp() {
@@ -17,8 +17,8 @@ export default function DesktopApp() {
         <h2>Projects</h2>
       </div>
       <div>
-        <img className="desktop-logo" src={achievement} alt="" />
-        <h2>Achievement</h2>
+        <img className="desktop-logo" src={memories} alt="" />
+        <h2>Memories</h2>
       </div>
       <div>
         <img className="desktop-logo" src={comp} alt="" />

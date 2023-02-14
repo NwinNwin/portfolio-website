@@ -4,9 +4,15 @@ body {
   background-blend-mode: multiply;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
+  /* font-family: "Press Start 2P", cursive !important; */
 }
 
 .myAppbar {
   top: auto !important;
   bottom: 0;
+}
+
+.windows-logo {
+  width: 30px;
+  margin-right: 5px;
 }
