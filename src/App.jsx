@@ -3,8 +3,9 @@ import { MenuList, MenuListItem, Separator, styleReset } from "react95";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import "./App.css";
 import BottomBar from "./components/BottomBar";
-import DesktopApp from "./components/DesktopApp";
-import MyWindow from "./components/MyWindow";
+import DesktopApp from "./components/DesktopApp/DesktopApp";
+import MyWindow from "./components/MyWindow/MyWindow";
+import "98.css";
 
 /* Pick a theme of your choice */
 import original from "react95/dist/themes/original";

@@ -9,18 +9,22 @@ import {
 } from "react95";
 import "./MyWindow.css";
 import Draggable, { DraggableCore } from "react-draggable";
+import AboutPage from "../AboutPage/AboutPage";
+
 
 export default function MyWindow() {
   return (
-    <>
+    <div className="window-div">
       <Draggable handle="strong">
         <Window resizable className="window">
           <strong className="cursor">
-            <WindowHeader className="window-title">
-              <span>react95.exe</span>
-              <Button>
-                <span className="close-icon" />
-              </Button>
+            <WindowHeader className="title-bar">
+              <div class="title-bar-text">A Title Bar</div>
+              <div class="title-bar-controls">
+                <Button aria-label="Minimize"></Button>
+                <Button aria-label="Maximize"></Button>
+                <Button aria-label="Close"></Button>
+              </div>
             </WindowHeader>
           </strong>
           <Toolbar>
@@ -35,29 +39,15 @@ export default function MyWindow() {
             </Button>
           </Toolbar>
           <WindowContent>
-            <p>
-              When you set &quot;resizable&quot; prop, there will be drag handle
-              in the bottom right corner (but resizing itself must be handled by
-              you tho!)
-            </p>
+            <div className="my-content">
+              <AboutPage />
+            </div>
           </WindowContent>
           <Frame variant="well" className="footer">
             Put some useful information here
           </Frame>
         </Window>
       </Draggable>
-
-      <Draggable>
-        <Window className="window">
-          <WindowHeader active={false} className="window-title">
-            <span>not-active.exe</span>
-            <Button>
-              <span className="close-icon" />{" "}
-            </Button>
-          </WindowHeader>
-          <WindowContent>I am not active</WindowContent>
-        </Window>
-      </Draggable>
-    </>
+    </div>
   );
 }

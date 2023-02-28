@@ -1,3 +1,9 @@
+.window-div {
+  position: absolute;
+  z-index: 9;
+  left: 40%;
+  top: 10%;
+}
 .window-title {
   display: flex;
   align-items: center;
@@ -13,8 +19,8 @@
   position: relative;
 }
 .window {
-  width: 400px;
-  min-height: 200px;
+  width: 50vw;
+  min-height: 60vh;
   position: absolute;
   resize: both;
   overflow: auto;
@@ -28,4 +34,15 @@
   height: 31px;
   line-height: 31px;
   padding-left: 0.25rem;
+}
+
+.my-content {
+  background: #fff;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf,
+    inset 2px 2px #0a0a0a;
+  display: block;
+  margin: 0;
+  padding: 12px 8px;
+  height: 50vh;
+  overflow: scroll;
 }
