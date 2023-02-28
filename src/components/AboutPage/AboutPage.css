@@ -1,3 +1,8 @@
 .pfp {
   width: 200px;
 }
+
+.name {
+  font-size: 2rem;
+  color: navy;
+}

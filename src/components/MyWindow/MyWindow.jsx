@@ -11,7 +11,6 @@ import "./MyWindow.css";
 import Draggable, { DraggableCore } from "react-draggable";
 import AboutPage from "../AboutPage/AboutPage";
 
-
 export default function MyWindow() {
   return (
     <div className="window-div">
@@ -43,9 +42,6 @@ export default function MyWindow() {
               <AboutPage />
             </div>
           </WindowContent>
-          <Frame variant="well" className="footer">
-            Put some useful information here
-          </Frame>
         </Window>
       </Draggable>
     </div>

@@ -7,6 +7,10 @@ import {
   Separator,
   TextInput,
   Toolbar,
+  GroupBox,
+  TreeLeaf,
+  TreeView,
+  ColorInput,
 } from "react95";
 
 import myselfpixel from "../../images/myselfpixel.png";
@@ -16,10 +20,84 @@ import welcome from "../../images/welcomegif.gif";
 export default function AboutPage() {
   const [open, setOpen] = useState(false);
 
+  const categories = [
+    {
+      id: "projects",
+      label: "Projects",
+      icon: <>💻</>,
+      items: [
+        {
+          id: "zotpals",
+          label: "ZotPals",
+          icon: <>🛒</>,
+        },
+        {
+          id: "havefun",
+          label: "HaveFun",
+          icon: <>😀</>,
+        },
+        {
+          id: "tictactoeplus",
+          label: "Tic-Tac-Toe➕",
+          icon: <>❌</>,
+        },
+      ],
+    },
+    {
+      id: "skills",
+      label: "Skills",
+      icon: <>⚒️</>,
+      items: [
+        {
+          id: "python",
+          label: "Python",
+        },
+        {
+          id: "c",
+          label: "C++",
+        },
+
+        {
+          id: "react",
+          label: "Web Dev",
+          items: [
+            {
+              id: "javascript",
+              label: "Javascript",
+            },
+            {
+              id: "react",
+              label: "React JS",
+            },
+            {
+              id: "html",
+              label: "HTML/CSS",
+            },
+            {
+              id: "nosql",
+              label: "NoSQL",
+            },
+          ],
+        },
+      ],
+    },
+  ];
   return (
     <>
-      <img src={welcome} alt="" />
-      <img className="pfp" src={myselfpixel} alt="" />
+      {/* <img src={welcome} alt="" /> */}
+
+      <div>
+        <div
+          style={{ maxWidth: "250px", background: "#e6e6e6", color: "navy" }}
+        >
+          <GroupBox label="About Me">
+            <img className="pfp" src={myselfpixel} alt="" />
+
+            <h1 className="name">Dang Nguyen</h1>
+            <TreeView tree={categories} />
+          </GroupBox>
+        </div>
+      </div>
 
       <p>
         This text is really long and the height of its container is only 100

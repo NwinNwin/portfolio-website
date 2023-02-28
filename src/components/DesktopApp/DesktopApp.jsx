@@ -2,7 +2,7 @@ import React from "react";
 import profile from "../../images/profile.svg";
 import projects from "../../images/projects.svg";
 import comp from "../../images/comp.svg";
-import memories from "../../images/memories.png";
+import ebay from "../../images/ebay.png";
 import "./DesktopApp.css";
 import "98.css";
 
@@ -18,8 +18,8 @@ export default function DesktopApp() {
         <p>Projects</p>
       </div>
       <div>
-        <img className="desktop-logo" src={memories} alt="" />
-        <p>Memories</p>
+        <img className="desktop-logo" src={ebay} alt="" />
+        <p>Ebay</p>
       </div>
       <div>
         <img className="desktop-logo" src={comp} alt="" />
