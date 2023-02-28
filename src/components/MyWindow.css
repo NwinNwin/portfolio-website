@@ -1,0 +1,31 @@
+.window-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: -1px;
+  margin-top: -1px;
+  transform: rotateZ(45deg);
+  position: relative;
+}
+.window {
+  width: 400px;
+  min-height: 200px;
+  position: absolute;
+  resize: both;
+  overflow: auto;
+}
+.window:nth-child(2) {
+  margin: 2rem;
+}
+.footer {
+  display: block;
+  margin: 0.25rem;
+  height: 31px;
+  line-height: 31px;
+  padding-left: 0.25rem;
+}

@@ -4,6 +4,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import "./App.css";
 import BottomBar from "./components/BottomBar";
 import DesktopApp from "./components/DesktopApp";
+import MyWindow from "./components/MyWindow";
 
 /* Pick a theme of your choice */
 import original from "react95/dist/themes/original";
@@ -35,6 +36,8 @@ const App = () => (
   <div>
     <GlobalStyles />
     <ThemeProvider theme={original}>
+      <MyWindow />
+
       <DesktopApp />
       <BottomBar />
     </ThemeProvider>
