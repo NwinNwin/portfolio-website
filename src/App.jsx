@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MenuList, MenuListItem, Separator, styleReset } from "react95";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import "./App.css";
@@ -33,16 +33,19 @@ const GlobalStyles = createGlobalStyle`
   ${styleReset}
 `;
 
-const App = () => (
-  <div>
-    <GlobalStyles />
-    <ThemeProvider theme={original}>
-      <MyWindow />
+const App = () => {
+  const [isClose, setIsClose] = useState(false);
+  return (
+    <div>
+      <GlobalStyles />
+      <ThemeProvider theme={original}>
+        {!isClose && <MyWindow setIsClose={setIsClose} />}
 
-      <DesktopApp />
-      <BottomBar />
-    </ThemeProvider>
-  </div>
-);
+        <DesktopApp />
+        <BottomBar />
+      </ThemeProvider>
+    </div>
+  );
+};
 
 export default App;

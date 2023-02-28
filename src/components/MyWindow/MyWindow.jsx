@@ -11,7 +11,7 @@ import "./MyWindow.css";
 import Draggable, { DraggableCore } from "react-draggable";
 import AboutPage from "../AboutPage/AboutPage";
 
-export default function MyWindow() {
+export default function MyWindow({ setIsClose }) {
   return (
     <div className="window-div">
       <Draggable handle="strong">
@@ -22,7 +22,12 @@ export default function MyWindow() {
               <div class="title-bar-controls">
                 <Button aria-label="Minimize"></Button>
                 <Button aria-label="Maximize"></Button>
-                <Button aria-label="Close"></Button>
+                <Button
+                  aria-label="Close"
+                  onClick={() => {
+                    setIsClose(true);
+                  }}
+                ></Button>
               </div>
             </WindowHeader>
           </strong>
