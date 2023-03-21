@@ -1,10 +1,11 @@
 .pfp {
-  width: 150px;
+  width: 200px;
 }
 
 .name {
-  font-size: 1.5rem;
-  color: navy;
+  font-size: 2rem;
+  color: #5573b1;
+  font-family: "Roboto";
 }
 
 .about-bg-pic {
@@ -19,4 +20,31 @@
 .about-content {
   display: flex;
   flex-direction: row;
+}
+
+.about-section {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.user-post {
+  margin-top: 1%;
+  padding-top: 2%;
+  width: 50%;
+  height: 12vh;
+  background-color: #e6e6e6;
+  border: 3px dashed #aebed6;
+  text-align: center;
+}
+
+.post-button {
+  background: #4267b2;
+  color: white;
+}
+
+.user-post-func {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 7%;
 }
