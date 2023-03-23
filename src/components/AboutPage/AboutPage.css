@@ -54,12 +54,12 @@
 }
 
 .pfp-post {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .post-pic {
-  width: 200px;
+  width: 120px;
 }
 
 .post-owner {
@@ -83,4 +83,19 @@
   width: 12vw;
   height: 50vh;
   background-color: #e6e6e6;
+  padding: 10px;
+}
+
+.post-pic-big {
+  width: 200px;
+}
+
+.post-pic-md {
+  width: 130px;
+}
+
+.inside-info {
+  width: 99%;
+  height: 90%;
+  background-color: white;
 }

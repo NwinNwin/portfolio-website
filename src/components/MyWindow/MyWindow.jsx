@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Frame,
-  Toolbar,
-  Window,
-  WindowContent,
-  WindowHeader,
-} from "react95";
+import { Button, Frame, Toolbar, Window, WindowContent, WindowHeader } from "react95";
 import "./MyWindow.css";
 import Draggable, { DraggableCore } from "react-draggable";
 import AboutPage from "../AboutPage/AboutPage";
@@ -18,7 +11,7 @@ export default function MyWindow({ setIsClose }) {
         <Window resizable className="window">
           <strong className="cursor">
             <WindowHeader className="title-bar">
-              <div class="title-bar-text">A Title Bar</div>
+              <div class="title-bar-text">www.facebook.com</div>
               <div class="title-bar-controls">
                 <Button aria-label="Minimize"></Button>
                 <Button aria-label="Maximize"></Button>
