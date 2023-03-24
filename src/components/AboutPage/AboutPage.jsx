@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div className="about-section">
               <p>Projects</p>
               <p>Marketplace</p>
-              <p>Photos</p>
+              <p>Contact Me</p>
             </div>
           </GroupBox>
 
@@ -42,15 +42,27 @@ export default function AboutPage() {
             <div className="info-box">
               <p>Information</p>
               <div className="inside-info">
-                <p>Basic Info:</p>
-                <p>School:</p>
-                <p>Class:</p>
-                <p>Major:</p>
+                <p className="info-title">Skills:</p>
 
-                <p>Contact Info:</p>
-                <p>Email:</p>
-                <p>Linkedin:</p>
-                <p>Github:</p>
+                <div className="info-title-box">
+                  <p className="info-title">Programming:</p>
+                  <p className="info-text">Python &nbsp; • &nbsp; Javascript &nbsp; • &nbsp; C++</p>
+                </div>
+
+                <div className="info-title-box">
+                  <p className="info-title">Frontend:</p>
+                  <p className="info-text">HTML/CSS • ReactJS</p>
+                </div>
+
+                <div className="info-title-box">
+                  <p className="info-title">Backend:</p>
+                  <p className="info-text">NodeJS • ExpressJS • PostgreSQL • MongoDB • Firebase</p>
+                </div>
+
+                <div className="info-title-box">
+                  <p className="info-title">Technologies:</p>
+                  <p className="info-text">Git • GitHub • Rest API • Postman • VSCode • Eclipse</p>
+                </div>
               </div>
             </div>
           </div>

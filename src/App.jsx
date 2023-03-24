@@ -42,7 +42,7 @@ const App = () => {
         {!isClose && <MyWindow setIsClose={setIsClose} />}
 
         <DesktopApp />
-        <BottomBar />
+        {/* <BottomBar /> */}
       </ThemeProvider>
     </div>
   );

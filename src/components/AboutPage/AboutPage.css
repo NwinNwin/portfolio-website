@@ -80,9 +80,10 @@
 
 .info-box {
   margin-left: 20%;
-  width: 12vw;
-  height: 50vh;
+  width: 15vw;
   background-color: #e6e6e6;
+  border: 3px dashed #aebed6;
+
   padding: 10px;
 }
 
@@ -95,7 +96,19 @@
 }
 
 .inside-info {
-  width: 99%;
-  height: 90%;
+  height: 80%;
+  padding: 10px;
   background-color: white;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.info-text {
+  font-size: 0.9rem;
+}
+
+.info-title-box {
+  margin: 5% 0;
 }

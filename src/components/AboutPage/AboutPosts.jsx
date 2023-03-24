@@ -9,6 +9,14 @@ import first_hackathon from "../../images/first_hackathon.jpg";
 import zelp from "../../images/zelp.png";
 import pter from "../../images/pter.png";
 import venus from "../../images/venus.jpg";
+import webdev from "../../images/webdev.png";
+import udemy from "../../images/udemy.png";
+import ctc from "../../images/ctc.webp";
+import cpp from "../../images/cpp.png";
+import firstplace from "../../images/firstplace.jpg";
+import zotpals from "../../images/zotpals.png";
+import havefun from "../../images/havefun.png";
+import hackuci2022 from "../../images/hackuci2022.jpg";
 
 export default function AboutPost() {
   return (
@@ -34,10 +42,10 @@ export default function AboutPost() {
           <img className="pfp-post" src={myselfpixel} alt="pfp" />
           <div
             style={{
-              marginLeft: "20px",
+              marginLeft: "15px",
             }}
           >
-            <p>Dang Nguyen </p>
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
             <p>August, 2021 🌎</p>
           </div>
         </div>
@@ -57,10 +65,10 @@ export default function AboutPost() {
           <img className="pfp-post" src={myselfpixel} alt="pfp" />
           <div
             style={{
-              marginLeft: "20px",
+              marginLeft: "15px",
             }}
           >
-            <p>Dang Nguyen </p>
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
             <p>August, 2021 🌎</p>
           </div>
         </div>
@@ -79,10 +87,10 @@ export default function AboutPost() {
           <img className="pfp-post" src={myselfpixel} alt="pfp" />
           <div
             style={{
-              marginLeft: "20px",
+              marginLeft: "15px",
             }}
           >
-            <p>Dang Nguyen </p>
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
             <p>November 20, 2021 🌎</p>
           </div>
         </div>
@@ -103,20 +111,133 @@ export default function AboutPost() {
           <img className="pfp-post" src={myselfpixel} alt="pfp" />
           <div
             style={{
-              marginLeft: "20px",
+              marginLeft: "15px",
             }}
           >
-            <p>Dang Nguyen </p>
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
             <p>May 20, 2022 🌎</p>
           </div>
         </div>
 
         <div className="description">
-          <p>2ND Hackathon</p>
+          <p>2ND Hackathon. didnt win but we had soo muchh fun </p>
         </div>
         <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
           <img className="post-pic-md" src={venus} alt="school" />
           <img className="post-pic-big" src={pter} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>Summer, 2022 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>I JUST LEARNED WEB DEV ONLINE!</p>
+        </div>
+        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+          <img className="post-pic" src={webdev} alt="school" />
+          <img className="post-pic-big" src={udemy} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>October, 2022 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>Developer at Commit The Change! Wohooooooooo!</p>
+        </div>
+        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+          <img className="post-pic-big" src={ctc} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>Winter, 2022 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>Data Structure and Algorithm class IS HARDDDDD!!!😔</p>
+        </div>
+        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+          <img className="post-pic" src={cpp} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>Webjam 2022 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>Webjam 2022: FIRST PLACE LESSS GOO!🏆</p>
+        </div>
+        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+          <img className="post-pic-big" src={firstplace} alt="school" />
+          <img className="post-pic-big" src={zotpals} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>HackUCI 2022 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>HackUCI 2022: ANOTHER HACKATHON ANOTHER PRIZE!🏅</p>
+        </div>
+        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+          <img className="post-pic-big" src={hackuci2022} alt="school" />
+          <img className="post-pic-big" src={havefun} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
       </div>
