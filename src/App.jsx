@@ -5,6 +5,7 @@ import "./App.css";
 import BottomBar from "./components/BottomBar";
 import DesktopApp from "./components/DesktopApp/DesktopApp";
 import MyWindow from "./components/MyWindow/MyWindow";
+import ProjectWindow from "./components/ProjectWindow/ProjectWindow";
 import "98.css";
 
 /* Pick a theme of your choice */
@@ -34,15 +35,20 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  const [isClose, setIsClose] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
+
   return (
     <div>
       <GlobalStyles />
       <ThemeProvider theme={original}>
-        {!isClose && <MyWindow setIsClose={setIsClose} />}
+        {isOpen && (
+          <MyWindow setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} />
+        )}
+        {isProjectOpen && <ProjectWindow setIsProjectOpen={setIsProjectOpen} />}
 
-        <DesktopApp />
-        {/* <BottomBar /> */}
+        <DesktopApp setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} />
+        <BottomBar />
       </ThemeProvider>
     </div>
   );

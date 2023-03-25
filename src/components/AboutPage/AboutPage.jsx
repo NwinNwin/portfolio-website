@@ -1,11 +1,23 @@
 import React, { useState } from "react";
-import { AppBar, Button, MenuList, MenuListItem, Separator, TextInput, Toolbar, GroupBox, TreeLeaf, TreeView, ColorInput } from "react95";
+import {
+  AppBar,
+  Button,
+  MenuList,
+  MenuListItem,
+  Separator,
+  TextInput,
+  Toolbar,
+  GroupBox,
+  TreeLeaf,
+  TreeView,
+  ColorInput,
+} from "react95";
 
 import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
 import AboutPost from "./AboutPosts";
 
-export default function AboutPage() {
+export default function AboutPage({ setIsProjectOpen }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -17,24 +29,32 @@ export default function AboutPage() {
           <h1>[ dang_nguyen ]</h1>
         </div>
         <div className="about-content">
-          <GroupBox
-            style={{
-              marginRight: "30px",
-              background: "#e6e6e6",
-              color: "black",
-              height: "50vh",
-            }}
-            label="About Me"
-          >
-            <img className="pfp" src={myselfpixel} alt="" />
-            <p className="name">Dang Nguyen</p>
+          <div>
+            <GroupBox
+              style={{
+                marginRight: "30px",
+                background: "#e6e6e6",
+                color: "black",
+              }}
+              label="About Me"
+            >
+              <img className="pfp" src={myselfpixel} alt="" />
+              <p className="name">Dang Nguyen</p>
 
-            <div className="about-section">
-              <p>Projects</p>
-              <p>Marketplace</p>
-              <p>Contact Me</p>
-            </div>
-          </GroupBox>
+              <div className="about-section">
+                <p
+                  onClick={() => {
+                    setIsProjectOpen(true);
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Projects
+                </p>
+                <p style={{ cursor: "pointer" }}>Marketplace</p>
+                <p style={{ cursor: "pointer" }}>Contact Me</p>
+              </div>
+            </GroupBox>
+          </div>
 
           <AboutPost />
 
@@ -46,7 +66,9 @@ export default function AboutPage() {
 
                 <div className="info-title-box">
                   <p className="info-title">Programming:</p>
-                  <p className="info-text">Python &nbsp; • &nbsp; Javascript &nbsp; • &nbsp; C++</p>
+                  <p className="info-text">
+                    Python &nbsp; • &nbsp; Javascript &nbsp; • &nbsp; C++
+                  </p>
                 </div>
 
                 <div className="info-title-box">
@@ -56,12 +78,16 @@ export default function AboutPage() {
 
                 <div className="info-title-box">
                   <p className="info-title">Backend:</p>
-                  <p className="info-text">NodeJS • ExpressJS • PostgreSQL • MongoDB • Firebase</p>
+                  <p className="info-text">
+                    NodeJS • ExpressJS • PostgreSQL • MongoDB • Firebase
+                  </p>
                 </div>
 
                 <div className="info-title-box">
                   <p className="info-title">Technologies:</p>
-                  <p className="info-text">Git • GitHub • Rest API • Postman • VSCode • Eclipse</p>
+                  <p className="info-text">
+                    Git • GitHub • Rest API • Postman • VSCode • Eclipse
+                  </p>
                 </div>
               </div>
             </div>

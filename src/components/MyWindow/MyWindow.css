@@ -1,9 +1,10 @@
 .window-div {
   position: absolute;
-  z-index: 8;
+  z-index: 7;
   left: 20%;
   top: 5%;
 }
+
 .window-title {
   display: flex;
   align-items: center;
@@ -38,7 +39,8 @@
 
 .my-content {
   background: #fff;
-  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf,
+    inset 2px 2px #0a0a0a;
   display: block;
   margin: 0;
   padding: 10px;

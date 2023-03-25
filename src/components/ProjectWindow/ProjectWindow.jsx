@@ -8,13 +8,14 @@ import {
   WindowHeader,
   TextInput,
 } from "react95";
-import "./MyWindow.css";
-import Draggable, { DraggableCore } from "react-draggable";
-import AboutPage from "../AboutPage/AboutPage";
+import "../MyWindow/MyWindow.css";
+import "./ProjectWindow.css";
 
-export default function MyWindow({ setIsOpen, setIsProjectOpen }) {
+import Draggable, { DraggableCore } from "react-draggable";
+import ProjectPage from "../ProjectPage/ProjectPage";
+export default function ProjectWindow({ setIsProjectOpen }) {
   return (
-    <div className="window-div">
+    <div className="project-window-div window-div">
       <Draggable handle="strong">
         <Window resizable className="window">
           <strong className="cursor">
@@ -26,21 +27,26 @@ export default function MyWindow({ setIsOpen, setIsProjectOpen }) {
                 <Button
                   aria-label="Close"
                   onClick={() => {
-                    setIsOpen(false);
+                    setIsProjectOpen(false);
                   }}
                 ></Button>
               </div>
             </WindowHeader>
           </strong>
           <Toolbar>
-            <TextInput
-              defaultValue="https://www.facebook.com/nguyen.nguyen.nguyen.nguyen.nguyen.nguyen.nguyen"
-              fullWidth
-            />
+            <Button variant="menu" size="sm">
+              File
+            </Button>
+            <Button variant="menu" size="sm">
+              Edit
+            </Button>
+            <Button variant="menu" size="sm" disabled>
+              Save
+            </Button>
           </Toolbar>
           <WindowContent>
-            <div className="my-content">
-              <AboutPage setIsProjectOpen={setIsProjectOpen} />
+            <div className="project-content my-content">
+              <ProjectPage />
             </div>
           </WindowContent>
         </Window>

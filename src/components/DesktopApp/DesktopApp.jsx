@@ -6,22 +6,32 @@ import ebay from "../../images/ebay.png";
 import "./DesktopApp.css";
 import "98.css";
 
-export default function DesktopApp() {
+export default function DesktopApp({ setIsOpen, setIsProjectOpen }) {
   return (
     <div className="desktop-app">
-      <div>
+      <div
+        onClick={() => {
+          setIsOpen(true);
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <img className="desktop-logo" src={profile} alt="" />
         <p>Profile</p>
       </div>
-      <div>
+      <div
+        onClick={() => {
+          setIsProjectOpen(true);
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <img className="desktop-logo" src={projects} alt="" />
         <p>Projects</p>
       </div>
-      <div>
+      <div style={{ cursor: "pointer" }}>
         <img className="desktop-logo" src={ebay} alt="" />
         <p>Ebay</p>
       </div>
-      <div>
+      <div style={{ cursor: "pointer" }}>
         <img className="desktop-logo" src={comp} alt="" />
         <p>My Computer</p>
       </div>

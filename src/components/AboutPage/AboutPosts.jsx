@@ -1,5 +1,17 @@
 import React, { useState } from "react";
-import { AppBar, Button, MenuList, MenuListItem, Separator, TextInput, Toolbar, GroupBox, TreeLeaf, TreeView, ColorInput } from "react95";
+import {
+  AppBar,
+  Button,
+  MenuList,
+  MenuListItem,
+  Separator,
+  TextInput,
+  Toolbar,
+  GroupBox,
+  TreeLeaf,
+  TreeView,
+  ColorInput,
+} from "react95";
 
 import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
@@ -32,7 +44,10 @@ export default function AboutPost() {
           defaultValue="What's on your mind?"
         />
         <div className="user-post-func">
-          <p>add photos &nbsp; • &nbsp; tags friends &nbsp; • &nbsp; feeling/activity</p>
+          <p>
+            add photos &nbsp; • &nbsp; tags friends &nbsp; • &nbsp;
+            feeling/activity
+          </p>
           <button className="post-button">Post message</button>
         </div>
       </div>
@@ -53,7 +68,14 @@ export default function AboutPost() {
         <div className="description">
           <p>UCI🎓: Major in Computer Science, Class of 2025</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic" src={school} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
@@ -76,7 +98,14 @@ export default function AboutPost() {
         <div className="description">
           <p>Python: My first language &#40; ICS-31 &#41;</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic" src={py} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
@@ -99,7 +128,14 @@ export default function AboutPost() {
           <p>FIRST HACKATHON!!!!</p>
           <p>learn more...</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic-big" src={first_hackathon} alt="school" />
           <img className="post-pic-big" src={zelp} alt="school" />
         </div>
@@ -122,7 +158,14 @@ export default function AboutPost() {
         <div className="description">
           <p>2ND Hackathon. didnt win but we had soo muchh fun </p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic-md" src={venus} alt="school" />
           <img className="post-pic-big" src={pter} alt="school" />
         </div>
@@ -145,7 +188,14 @@ export default function AboutPost() {
         <div className="description">
           <p>I JUST LEARNED WEB DEV ONLINE!</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic" src={webdev} alt="school" />
           <img className="post-pic-big" src={udemy} alt="school" />
         </div>
@@ -168,7 +218,14 @@ export default function AboutPost() {
         <div className="description">
           <p>Developer at Commit The Change! Wohooooooooo!</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic-big" src={ctc} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
@@ -190,7 +247,14 @@ export default function AboutPost() {
         <div className="description">
           <p>Data Structure and Algorithm class IS HARDDDDD!!!😔</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic" src={cpp} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
@@ -212,7 +276,14 @@ export default function AboutPost() {
         <div className="description">
           <p>Webjam 2022: FIRST PLACE LESSS GOO!🏆</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic-big" src={firstplace} alt="school" />
           <img className="post-pic-big" src={zotpals} alt="school" />
         </div>
@@ -235,7 +306,14 @@ export default function AboutPost() {
         <div className="description">
           <p>HackUCI 2022: ANOTHER HACKATHON ANOTHER PRIZE!🏅</p>
         </div>
-        <div style={{ margin: "2% 0", textAlign: "center", background: "white", padding: "3%" }}>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
           <img className="post-pic-big" src={hackuci2022} alt="school" />
           <img className="post-pic-big" src={havefun} alt="school" />
         </div>
