@@ -1,3 +1,44 @@
-.project-page-content {
-  background-color: red;
+.project-greeting {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+}
+
+.project-table-content {
+  font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: red;
+  text-decoration: red underline;
+  -webkit-text-stroke: 2px black; /* width and color */
+  cursor: pointer;
+  text-align: center;
+}
+
+.project-1 {
+  background-image: url("bg.png");
+  width: 100%;
+  margin-top: 10%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-1-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  font-weight: bold;
+  color: yellow;
+}
+
+.project-description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3vw;
+  background-color: lightblue;
+  color: black;
+  padding: 5%;
+  border-radius: 20px;
 }
