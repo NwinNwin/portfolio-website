@@ -59,3 +59,59 @@
   display: flex;
   justify-content: center;
 }
+
+.project-2 {
+  background-image: url("bg2.png");
+  margin-top: 2%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.project-2-description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3vw;
+  color: white;
+  padding: 3%;
+  border-radius: 20px;
+  width: 60%;
+  background-color: rgb(140, 46, 46);
+  box-shadow: 0 0 30px 19px rgb(216, 216, 140);
+  text-align: center;
+  margin: 5% 0;
+}
+
+.project-3 {
+  background-image: url("bg3.jpeg");
+  background-color: rgb(186, 169, 238);
+  background-blend-mode: multiply;
+  margin-top: 2%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.project-3-description {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3vw;
+  color: white;
+  padding: 3%;
+  border-radius: 20px;
+  width: 60%;
+  background-color: rgb(74, 55, 122);
+  text-align: center;
+  margin: 5% 0;
+}
+
+.project-3-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  font-weight: bold;
+  color: yellow;
+}
