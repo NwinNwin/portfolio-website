@@ -48,7 +48,7 @@ const App = () => {
         {isProjectOpen && <ProjectWindow setIsProjectOpen={setIsProjectOpen} />}
 
         <DesktopApp setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} />
-        <BottomBar />
+        {/* <BottomBar /> */}
       </ThemeProvider>
     </div>
   );
