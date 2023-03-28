@@ -1,17 +1,5 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Button,
-  MenuList,
-  MenuListItem,
-  Separator,
-  TextInput,
-  Toolbar,
-  GroupBox,
-  TreeLeaf,
-  TreeView,
-  ColorInput,
-} from "react95";
+import { AppBar, Button, MenuList, MenuListItem, Separator, TextInput, Toolbar, GroupBox, TreeLeaf, TreeView, ColorInput } from "react95";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -27,6 +15,8 @@ import zotpals4 from "../../images/zotpals4.png";
 import zotpals5 from "../../images/zotpals5.png";
 import medal from "../../images/medal.png";
 import medalhack from "../../images/medalhack.png";
+import github from "../../images/github.svg";
+import school from "../../images/school.png";
 
 import havefun1 from "../../images/havefun1.png";
 import havefun2 from "../../images/havefun2.png";
@@ -35,6 +25,16 @@ import havefun5 from "../../images/havefun5.png";
 
 import zelp1 from "../../images/zelp1.png";
 import zelp2 from "../../images/zelp2.png";
+
+import ttt1 from "../../images/ttt1.png";
+import ttt2 from "../../images/ttt2.png";
+import ttt3 from "../../images/ttt3.png";
+import ttt4 from "../../images/ttt4.png";
+
+import comp from "../../images/comp.svg";
+import tomato from "../../images/tomato.gif";
+
+import antalert from "../../images/antalert.png";
 
 import "./ProjectPage.css";
 
@@ -72,10 +72,13 @@ export default function ProjectPage() {
                 3. Zelp
               </a>
             </div>
+            <div>
+              <a href="#tictactoe" style={{ textDecoration: "none !important" }}>
+                4. TicTacToe+
+              </a>
+            </div>
 
-            <h1>4. TicTacToe+</h1>
-            <h1>5. AntAlert</h1>
-            <h1>6. Learning Projects</h1>
+            <h1>5. More Projects</h1>
           </div>
           <div>
             <img src={bubble} alt="" />
@@ -87,6 +90,27 @@ export default function ProjectPage() {
 
       {/* ZOTPALS */}
       <div className="project-1" id="zotpals">
+        {/* <img className="project-thumbnail" src={zotpals2} /> */}
+
+        <Carousel className="project-thumbnail" showThumbs={false}>
+          <div>
+            <img src={zotpals1} />
+          </div>
+          <div>
+            <img src={zotpals2} />
+          </div>
+          <div>
+            <img src={zotpals3} />
+          </div>
+          <div>
+            <img src={zotpals4} />
+          </div>
+          <div>
+            <img src={zotpals5} />
+          </div>
+        </Carousel>
+        {/* <p className="legend">Landing Page</p> */}
+
         <div className="project-1-main">
           <h1 className="project-1-title">Zotpals</h1>
           <div className="project-description">
@@ -99,74 +123,32 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "5vw" }} src={medal} alt="" />
-              <p>1st Place @ UCI Webjam 2022.</p>
+              <img style={{ width: "3.5vw" }} src={medal} alt="" />
+              <p>1ST Place @ UCI Webjam 2022.</p>
             </div>
+            <p>• A web application that allows users to list, borrow and browse items for things they may need without the hassle of “having a relationship”.</p>
+            <div className="btn-div">
+              <a href="https://github.com/stevem-zhou/ZotPals">
+                <div className="github-btn">
+                  <img className="github" src={github} alt="" />
+                  <p>&nbsp;GitHub</p>
+                </div>
+              </a>
 
-            <p>
-              • A web application that provides a medium for users to list items
-              they no longer need, borrow items they desire, and browse items
-              for things they may need without the hassle of “having a
-              relationship”.
-            </p>
+              <a href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/">
+                <div className="uci-btn">
+                  <img className="github" src={school} alt="" />
+                  <p>&nbsp;UCI ICS</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-
-        <Carousel showThumbs={false} width="60%">
-          <div>
-            <img src={zotpals1} />
-            {/* <p className="legend">Landing Page</p> */}
-          </div>
-          <div>
-            <img src={zotpals2} />
-            {/* <p className="legend">
-              Where user explore products (From newest to oldest)
-            </p> */}
-          </div>
-          <div>
-            <img src={zotpals3} />
-            {/* <p className="legend">Product information with comment box</p> */}
-          </div>
-          <div>
-            <img src={zotpals4} />
-            {/* <p className="legend">User is able to post item</p> */}
-          </div>
-          <div>
-            <img src={zotpals5} />
-            {/* <p className="legend">
-              Comment section where people can comment under the product
-            </p> */}
-          </div>
-        </Carousel>
       </div>
 
       {/* HAVEFUN */}
       <div className="project-2" id="havefun">
-        <div className="project-1-main">
-          <h1 className="project-1-title">Zelp</h1>
-          <div className="project-2-description">
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                marginBottom: "5%",
-                justifyContent: "center",
-              }}
-            >
-              <img style={{ width: "5vw" }} src={medalhack} alt="" />
-              <p>"Best Meme Hack" @ HACKUCI 2023</p>
-            </div>
-
-            <p>
-              • A social platform that emphasizes having fun and encourages its
-              users to share their moments of enjoyment, participate in daily
-              joke challenges and create memes with a built-in generator.
-            </p>
-          </div>
-        </div>
-
-        <Carousel showThumbs={false} width="60%">
+        <Carousel className="project-thumbnail project-2-color" showThumbs={false}>
           <div>
             <img src={havefun1} />
           </div>
@@ -180,13 +162,11 @@ export default function ProjectPage() {
             <img src={havefun5} />
           </div>
         </Carousel>
-      </div>
+        {/* <p className="legend">Landing Page</p> */}
 
-      {/* Zelp */}
-      <div className="project-3" id="zelp">
         <div className="project-1-main">
-          <h1 className="project-3-title">Zelp</h1>
-          <div className="project-3-description">
+          <h1 className="project-1-title">HaveFun</h1>
+          <div className="project-description" style={{ background: "rgb(140, 46, 46)", boxShadow: "0 0 30px 5px rgb(216, 216, 140)" }}>
             <div
               style={{
                 display: "flex",
@@ -196,17 +176,34 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <p>Participated in ZotHacks 2021</p>
+              <img style={{ width: "3.5vw" }} src={medalhack} alt="" />
+              <p>"Best Meme Hack" @ HACKUCI 2023</p>
             </div>
-
             <p>
-              • A website that allows students to mark locations on campus of
-              utilities, add caption reviews of each location marked on the map,
-              and filter to one of the essentials that they would like to view.
+              • A social platform that emphasizes having fun and encourages its users to share their moments of enjoyment, participate in daily joke challenges and create memes with a built-in
+              generator.
             </p>
+            <div className="btn-div">
+              <a href="https://github.com/2mnguyen1/HackUCI-HaveFun">
+                <div className="github-btn">
+                  <img className="github" src={github} alt="" />
+                  <p>&nbsp;GitHub</p>
+                </div>
+              </a>
+
+              <a href="https://devpost.com/software/havefun">
+                <div className="uci-btn">
+                  <img className="github" src={school} alt="" />
+                  <p>&nbsp;DevPost</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <Carousel showThumbs={false} width="60%">
+      </div>
+
+      <div className="project-3" id="zelp">
+        <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
             <img src={zelp1} />
           </div>
@@ -214,13 +211,11 @@ export default function ProjectPage() {
             <img src={zelp2} />
           </div>
         </Carousel>
-      </div>
+        {/* <p className="legend">Landing Page</p> */}
 
-      {/* TicTacToe+ */}
-      <div className="project-3" id="zelp">
         <div className="project-1-main">
-          <h1 className="project-3-title">TicTacToe+</h1>
-          <div className="project-3-description">
+          <h1 className="project-1-title">Zelp</h1>
+          <div className="project-description">
             <div
               style={{
                 display: "flex",
@@ -230,24 +225,85 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <p>Participated in ZotHacks 2021</p>
+              <img style={{ width: "3.5vw" }} src={tomato} alt="" />
+              <p>Participated @ ZotHacks 2021</p>
             </div>
-
             <p>
-              • A website that allows students to mark locations on campus of
-              utilities, add caption reviews of each location marked on the map,
-              and filter to one of the essentials that they would like to view.
+              • A website that allows students to mark locations on campus of utilities, add caption reviews of each location marked on the map, and filter to one of the essentials that they would
+              like to view.
             </p>
+            <div className="btn-div">
+              <a href="https://github.com/Bryan-Phung/zelp">
+                <div className="github-btn">
+                  <img className="github" src={github} alt="" />
+                  <p>&nbsp;GitHub</p>
+                </div>
+              </a>
+
+              <a href="https://devpost.com/software/zelp">
+                <div className="uci-btn">
+                  <img className="github" src={school} alt="" />
+                  <p>&nbsp;DevPost</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-        <Carousel showThumbs={false} width="60%">
+      </div>
+
+      <div className="project-3 project-4" id="tictactoe">
+        <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
-            <img src={zelp1} />
+            <img src={ttt2} />
           </div>
           <div>
-            <img src={zelp2} />
+            <img src={ttt4} />
+          </div>
+          <div>
+            <img src={ttt3} />
+          </div>
+          <div>
+            <img src={ttt1} />
           </div>
         </Carousel>
+        {/* <p className="legend">Landing Page</p> */}
+
+        <div className="project-1-main">
+          <h1 className="project-1-title">TicTacToe+</h1>
+          <div className="project-description" style={{ background: "rgb(151, 28, 28)" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                marginBottom: "5%",
+                justifyContent: "center",
+              }}
+            >
+              <img style={{ width: "1.5vw" }} src={comp} alt="" />
+              <p>&nbsp;Personal Project</p>
+            </div>
+            <p>
+              A Tic-Tac-Toe web game that features a clean and intuitive interface making it easy for players of all skill levels to jump right into the action. There are three modes: AI, multiplayer,
+              and offline.
+            </p>
+            <div className="btn-div">
+              <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS">
+                <div className="github-btn">
+                  <img className="github" src={github} alt="" />
+                  <p>&nbsp;GitHub</p>
+                </div>
+              </a>
+
+              <a href="https://tic-tac-toe-plus.netlify.app/">
+                <div className="website-btn">
+                  <img className="github" src={comp} alt="" />
+                  <p>&nbsp;Website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

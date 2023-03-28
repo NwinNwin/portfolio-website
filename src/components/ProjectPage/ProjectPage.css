@@ -19,13 +19,20 @@
 
 .project-1 {
   background-image: url("bg.png");
-  margin-top: 10%;
+  margin: 10% auto 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-self: center;
+  width: 90%;
+  box-shadow: 0 0 30px 19px blue;
+  border-radius: 40px;
+}
+
+.github {
+  width: 20px;
 }
 
 .project-1-title {
@@ -37,15 +44,15 @@
 
 .project-description {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.3vw;
+  font-size: 1vw;
   color: white;
   padding: 3%;
   border-radius: 20px;
-  width: 60%;
+  width: 70%;
+  padding: 20px;
   background-color: rgb(9, 9, 99);
-  box-shadow: 0 0 30px 19px #2358f7;
+  box-shadow: 0 0 30px 10px #2358f7;
   text-align: center;
-  margin: 5% 0;
 }
 
 .project-1-main {
@@ -62,39 +69,30 @@
 
 .project-2 {
   background-image: url("bg2.png");
-  margin-top: 2%;
+  margin: 5% auto 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-self: center;
-}
-
-.project-2-description {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.3vw;
-  color: white;
-  padding: 3%;
-  border-radius: 20px;
-  width: 60%;
-  background-color: rgb(140, 46, 46);
+  width: 90%;
   box-shadow: 0 0 30px 19px rgb(216, 216, 140);
-  text-align: center;
-  margin: 5% 0;
+  border-radius: 40px;
 }
 
 .project-3 {
-  background-image: url("bg3.jpeg");
-  background-color: rgb(186, 169, 238);
-  background-blend-mode: multiply;
-  margin-top: 2%;
+  background-image: url("bg3.jpg");
+  margin: 5% auto 0 auto;
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-self: center;
+  width: 90%;
+  box-shadow: 0 0 30px 19px rgb(153, 161, 246);
+  border-radius: 40px;
 }
 
 .project-3-description {
@@ -114,4 +112,74 @@
   font-size: 5vw;
   font-weight: bold;
   color: yellow;
+}
+
+.project-thumbnail {
+  width: 70%;
+  border-radius: 30px;
+  box-shadow: 0 0 30px 15px #2358f7;
+}
+
+.project-2-color {
+  box-shadow: 0 0 20px 3px rgb(216, 216, 140);
+}
+.github-btn {
+  background-color: darkred;
+  padding: 0.8vw;
+  width: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 10%;
+  border: 2px white solid;
+}
+
+.uci-btn {
+  background-color: darkblue;
+  padding: 0.8vw;
+  width: 80px;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10%;
+  border: 2px yellow solid;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.website-btn {
+  background-color: rgb(95, 89, 89);
+  padding: 0.8vw;
+  width: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10%;
+  border: 2px white solid;
+}
+
+.project-4 {
+  background-image: url("bg4.png");
+}
+
+.more-projects {
+  background-image: url("bg5.png");
+  margin: 5% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 90%;
+  box-shadow: 0 0 30px 19px rgb(153, 161, 246);
+  border-radius: 40px;
+}
+
+.mp-img {
+  width: 20vw;
 }
