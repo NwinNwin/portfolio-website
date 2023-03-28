@@ -82,7 +82,7 @@
 }
 
 .project-3 {
-  background-image: url("bg3.jpg");
+  background-image: url("bg5.png");
   margin: 5% auto 0 auto;
   padding: 20px;
   display: flex;
@@ -138,7 +138,7 @@
 .uci-btn {
   background-color: darkblue;
   padding: 0.8vw;
-  width: 80px;
+  width: 85px;
   color: yellow;
   display: flex;
   align-items: center;
@@ -182,4 +182,8 @@
 
 .mp-img {
   width: 20vw;
+}
+
+.project-5 {
+  background-image: url("bg3.jpg");
 }

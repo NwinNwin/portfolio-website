@@ -1,5 +1,17 @@
 import React, { useState } from "react";
-import { AppBar, Button, MenuList, MenuListItem, Separator, TextInput, Toolbar, GroupBox, TreeLeaf, TreeView, ColorInput } from "react95";
+import {
+  AppBar,
+  Button,
+  MenuList,
+  MenuListItem,
+  Separator,
+  TextInput,
+  Toolbar,
+  GroupBox,
+  TreeLeaf,
+  TreeView,
+  ColorInput,
+} from "react95";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -34,7 +46,10 @@ import ttt4 from "../../images/ttt4.png";
 import comp from "../../images/comp.svg";
 import tomato from "../../images/tomato.gif";
 
+import ctc from "../../images/ctc.webp";
 import antalert from "../../images/antalert.png";
+import morep from "../../images/morep.png";
+import moreproj from "../../images/moreproj.gif";
 
 import "./ProjectPage.css";
 
@@ -73,12 +88,19 @@ export default function ProjectPage() {
               </a>
             </div>
             <div>
-              <a href="#tictactoe" style={{ textDecoration: "none !important" }}>
+              <a
+                href="#tictactoe"
+                style={{ textDecoration: "none !important" }}
+              >
                 4. TicTacToe+
               </a>
             </div>
 
-            <h1>5. More Projects</h1>
+            <div>
+              <a href="#mp" style={{ textDecoration: "none !important" }}>
+                5. More Projects
+              </a>
+            </div>
           </div>
           <div>
             <img src={bubble} alt="" />
@@ -126,7 +148,11 @@ export default function ProjectPage() {
               <img style={{ width: "3.5vw" }} src={medal} alt="" />
               <p>1ST Place @ UCI Webjam 2022.</p>
             </div>
-            <p>• A web application that allows users to list, borrow and browse items for things they may need without the hassle of “having a relationship”.</p>
+            <p>
+              • A web application that allows users to list, borrow and browse
+              items for things they may need without the hassle of “having a
+              relationship”.
+            </p>
             <div className="btn-div">
               <a href="https://github.com/stevem-zhou/ZotPals">
                 <div className="github-btn">
@@ -148,7 +174,10 @@ export default function ProjectPage() {
 
       {/* HAVEFUN */}
       <div className="project-2" id="havefun">
-        <Carousel className="project-thumbnail project-2-color" showThumbs={false}>
+        <Carousel
+          className="project-thumbnail project-2-color"
+          showThumbs={false}
+        >
           <div>
             <img src={havefun1} />
           </div>
@@ -166,7 +195,13 @@ export default function ProjectPage() {
 
         <div className="project-1-main">
           <h1 className="project-1-title">HaveFun</h1>
-          <div className="project-description" style={{ background: "rgb(140, 46, 46)", boxShadow: "0 0 30px 5px rgb(216, 216, 140)" }}>
+          <div
+            className="project-description"
+            style={{
+              background: "rgb(140, 46, 46)",
+              boxShadow: "0 0 30px 5px rgb(216, 216, 140)",
+            }}
+          >
             <div
               style={{
                 display: "flex",
@@ -180,8 +215,9 @@ export default function ProjectPage() {
               <p>"Best Meme Hack" @ HACKUCI 2023</p>
             </div>
             <p>
-              • A social platform that emphasizes having fun and encourages its users to share their moments of enjoyment, participate in daily joke challenges and create memes with a built-in
-              generator.
+              • A social platform that emphasizes having fun and encourages its
+              users to share their moments of enjoyment, participate in daily
+              joke challenges and create memes with a built-in generator.
             </p>
             <div className="btn-div">
               <a href="https://github.com/2mnguyen1/HackUCI-HaveFun">
@@ -229,8 +265,9 @@ export default function ProjectPage() {
               <p>Participated @ ZotHacks 2021</p>
             </div>
             <p>
-              • A website that allows students to mark locations on campus of utilities, add caption reviews of each location marked on the map, and filter to one of the essentials that they would
-              like to view.
+              • A website that allows students to mark locations on campus of
+              utilities, add caption reviews of each location marked on the map,
+              and filter to one of the essentials that they would like to view.
             </p>
             <div className="btn-div">
               <a href="https://github.com/Bryan-Phung/zelp">
@@ -270,7 +307,10 @@ export default function ProjectPage() {
 
         <div className="project-1-main">
           <h1 className="project-1-title">TicTacToe+</h1>
-          <div className="project-description" style={{ background: "rgb(151, 28, 28)" }}>
+          <div
+            className="project-description"
+            style={{ background: "rgb(151, 28, 28)" }}
+          >
             <div
               style={{
                 display: "flex",
@@ -284,8 +324,10 @@ export default function ProjectPage() {
               <p>&nbsp;Personal Project</p>
             </div>
             <p>
-              A Tic-Tac-Toe web game that features a clean and intuitive interface making it easy for players of all skill levels to jump right into the action. There are three modes: AI, multiplayer,
-              and offline.
+              A Tic-Tac-Toe web game that features a clean and intuitive
+              interface making it easy for players of all skill levels to jump
+              right into the action. There are three modes: AI, multiplayer, and
+              offline.
             </p>
             <div className="btn-div">
               <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS">
@@ -299,6 +341,53 @@ export default function ProjectPage() {
                 <div className="website-btn">
                   <img className="github" src={comp} alt="" />
                   <p>&nbsp;Website</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-3 project-5" id="mp">
+        <Carousel className="project-thumbnail" showThumbs={false}>
+          <div>
+            <img src={antalert} />
+            <p className="legend">AntAlert</p>
+          </div>
+          <div>
+            <img src={ctc} />
+            <p className="legend">CTC Wasteless</p>
+          </div>
+          <div>
+            <img src={morep} />
+            <p className="legend">Learning Projects</p>
+          </div>
+        </Carousel>
+        {/* <p className="legend">Landing Page</p> */}
+
+        <div className="project-1-main">
+          <h1 className="project-1-title">More Projects</h1>
+          <div className="project-description">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                marginBottom: "5%",
+                justifyContent: "center",
+              }}
+            >
+              <img style={{ width: "5vw" }} src={moreproj} alt="" />
+            </div>
+            <p>
+              I am a self-taught web developer and I learn to code in my spare
+              time. Come to check out my progress on GitHub!
+            </p>
+            <div className="btn-div">
+              <a href="https://github.com/NwinNwin">
+                <div className="github-btn">
+                  <img className="github" src={github} alt="" />
+                  <p>&nbsp;GitHub</p>
                 </div>
               </a>
             </div>
