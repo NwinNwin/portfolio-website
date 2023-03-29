@@ -17,7 +17,7 @@ import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
 import AboutPost from "./AboutPosts";
 
-export default function AboutPage({ setIsProjectOpen }) {
+export default function AboutPage({ setIsProjectOpen, setIsMarketOpen }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -50,7 +50,15 @@ export default function AboutPage({ setIsProjectOpen }) {
                 >
                   Projects
                 </p>
-                <p style={{ cursor: "pointer" }}>Marketplace</p>
+                <p style={{ cursor: "pointer" }}>Resume</p>
+                <p
+                  onClick={() => {
+                    setIsMarketOpen(true);
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Marketplace
+                </p>
                 <p style={{ cursor: "pointer" }}>Contact Me</p>
               </div>
             </GroupBox>

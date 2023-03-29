@@ -8,46 +8,45 @@ import {
   WindowHeader,
   TextInput,
 } from "react95";
-import "./MyWindow.css";
-import Draggable, { DraggableCore } from "react-draggable";
-import AboutPage from "../AboutPage/AboutPage";
+import "../MyWindow/MyWindow.css";
+import "./MarketWindow.css";
 
-export default function MyWindow({
-  setIsOpen,
-  setIsProjectOpen,
-  setIsMarketOpen,
-}) {
+import Draggable, { DraggableCore } from "react-draggable";
+import MarketPage from "../MarketPage/MarketPage";
+export default function MarketWindow({ setIsMarketOpen }) {
   return (
-    <div className="window-div">
+    <div className="market-window-div window-div">
       <Draggable handle="strong">
         <Window resizable className="window">
           <strong className="cursor">
             <WindowHeader className="title-bar">
-              <div class="title-bar-text">Internet</div>
+              <div class="title-bar-text">Marketplace</div>
               <div class="title-bar-controls">
                 <Button aria-label="Minimize"></Button>
                 <Button aria-label="Maximize"></Button>
                 <Button
                   aria-label="Close"
                   onClick={() => {
-                    setIsOpen(false);
+                    setIsMarketOpen(false);
                   }}
                 ></Button>
               </div>
             </WindowHeader>
           </strong>
           <Toolbar>
-            <TextInput
-              defaultValue="https://www.facebook.com/nguyen.nguyen.nguyen.nguyen.nguyen.nguyen.nguyen"
-              fullWidth
-            />
+            <Button variant="menu" size="sm">
+              File
+            </Button>
+            <Button variant="menu" size="sm">
+              Edit
+            </Button>
+            <Button variant="menu" size="sm" disabled>
+              Save
+            </Button>
           </Toolbar>
           <WindowContent>
-            <div className="my-content">
-              <AboutPage
-                setIsProjectOpen={setIsProjectOpen}
-                setIsMarketOpen={setIsMarketOpen}
-              />
+            <div className="market-content my-content">
+              <MarketPage />
             </div>
           </WindowContent>
         </Window>

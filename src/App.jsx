@@ -6,6 +6,7 @@ import BottomBar from "./components/BottomBar";
 import DesktopApp from "./components/DesktopApp/DesktopApp";
 import MyWindow from "./components/MyWindow/MyWindow";
 import ProjectWindow from "./components/ProjectWindow/ProjectWindow";
+import MarketWindow from "./components/MarketWindow/MarketWindow";
 import "98.css";
 
 /* Pick a theme of your choice */
@@ -36,18 +37,28 @@ const GlobalStyles = createGlobalStyle`
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isProjectOpen, setIsProjectOpen] = useState(true);
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
+  const [isMarketOpen, setIsMarketOpen] = useState(true);
 
   return (
     <div>
       <GlobalStyles />
       <ThemeProvider theme={original}>
         {isOpen && (
-          <MyWindow setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} />
+          <MyWindow
+            setIsOpen={setIsOpen}
+            setIsProjectOpen={setIsProjectOpen}
+            setIsMarketOpen={setIsMarketOpen}
+          />
         )}
         {isProjectOpen && <ProjectWindow setIsProjectOpen={setIsProjectOpen} />}
+        {isMarketOpen && <MarketWindow setIsMarketOpen={setIsMarketOpen} />}
 
-        <DesktopApp setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} />
+        <DesktopApp
+          setIsOpen={setIsOpen}
+          setIsProjectOpen={setIsProjectOpen}
+          setIsMarketOpen={setIsMarketOpen}
+        />
         {/* <BottomBar /> */}
       </ThemeProvider>
     </div>
