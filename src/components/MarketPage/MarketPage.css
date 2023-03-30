@@ -3,19 +3,41 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   font-family: "Times New Roman", Times, serif;
+  margin: 0 100px;
 }
 
 .ebay-market {
-  width: 170px;
+  width: 10vw;
 }
 
 .categories {
   padding: 8px;
-  font-size: 1.45em;
+  font-size: 1.5vw;
   background: #f8ca02;
-  width: 150px;
+  width: 8vw;
   text-align: center;
   color: #000;
+}
+
+.cata-txt {
+  font-size: 2vh;
+  color: blue;
+}
+
+.dummy-qty {
+  color: rgb(211, 186, 186);
+}
+
+.market-items {
+  width: 15vw;
+}
+
+.items-box {
+  margin: 5% 0;
+  width: 17vw;
+  padding: 5px;
+  border: 2px solid white;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

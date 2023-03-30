@@ -154,14 +154,14 @@ export default function ProjectPage() {
               relationship”.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/stevem-zhou/ZotPals">
+              <a href="https://github.com/stevem-zhou/ZotPals" target="_blank">
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/">
+              <a href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/" target="_blank">
                 <div className="uci-btn">
                   <img className="github" src={school} alt="" />
                   <p>&nbsp;UCI ICS</p>
@@ -220,14 +220,14 @@ export default function ProjectPage() {
               joke challenges and create memes with a built-in generator.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/2mnguyen1/HackUCI-HaveFun">
+              <a href="https://github.com/2mnguyen1/HackUCI-HaveFun" target="_blank">
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/havefun">
+              <a href="https://devpost.com/software/havefun" target="_blank">
                 <div className="uci-btn">
                   <img className="github" src={school} alt="" />
                   <p>&nbsp;DevPost</p>
@@ -270,14 +270,14 @@ export default function ProjectPage() {
               and filter to one of the essentials that they would like to view.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/Bryan-Phung/zelp">
+              <a href="https://github.com/Bryan-Phung/zelp" target="_blank">
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/zelp">
+              <a href="https://devpost.com/software/zelp" target="_blank">
                 <div className="uci-btn">
                   <img className="github" src={school} alt="" />
                   <p>&nbsp;DevPost</p>
@@ -330,14 +330,14 @@ export default function ProjectPage() {
               offline.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS">
+              <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS" target="_blank">
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://tic-tac-toe-plus.netlify.app/">
+              <a href="https://tic-tac-toe-plus.netlify.app/" target="_blank">
                 <div className="website-btn">
                   <img className="github" src={comp} alt="" />
                   <p>&nbsp;Website</p>
@@ -384,7 +384,7 @@ export default function ProjectPage() {
               time. Come to check out my progress on GitHub!
             </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin">
+              <a href="https://github.com/NwinNwin" target="_blank">
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>

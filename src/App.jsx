@@ -59,7 +59,7 @@ const App = () => {
           setIsProjectOpen={setIsProjectOpen}
           setIsMarketOpen={setIsMarketOpen}
         />
-        {/* <BottomBar /> */}
+        <BottomBar />
       </ThemeProvider>
     </div>
   );
