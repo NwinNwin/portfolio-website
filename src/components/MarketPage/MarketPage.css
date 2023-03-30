@@ -2,6 +2,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ebay-market {
+  width: 170px;
+}
+
+.categories {
+  padding: 8px;
+  font-size: 1.45em;
+  background: #f8ca02;
+  width: 150px;
+  text-align: center;
+  color: #000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -9,11 +23,11 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
   }
-  
+
   .box:first-child {
     grid-row: 1;
   }
-  
+
   .box:last-child {
     grid-row: 2;
   }
