@@ -15,14 +15,24 @@ import {
 import "./MarketPage.css";
 
 import MarketItems from "./MarketItems";
-
 import ebay from "../../images/ebay.png";
+import nwinsworld from "../../images/nwinsworld.png";
+import mario from "../../images/mario.png";
+import epic from "../../images/epic.gif";
+import marketplace1 from "../../images/marketplace1.jpeg";
 
 export default function MarketPage() {
   return (
-    <>
+    <div className="market-content">
+      <div>
+        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-browse_125x.jpg?v=132482183862390953861533492721" />
+        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-sell_125x.jpg?v=87926657540146666301533492750" />
+        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-services_125x.jpg?v=18256923694229474921533492759" />
+        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-help_125x.jpg?v=23361398229467722221533492736" />
+        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-community_125x.jpg?v=155361199490045294271533492729" />
+      </div>
       <div class="container">
-        <div class="box">
+        <div class="box first">
           <img className="ebay-market" src={ebay} alt="ebay" />
           <div className="categories">Categories</div>
           <ul id="categories-list">
@@ -96,8 +106,19 @@ export default function MarketPage() {
         <div class="box">
           <MarketItems />
         </div>
-        <div class="box">Box 3</div>
+        <div class="box">
+          <div>
+            <img className="nwinsworld" src={nwinsworld} alt="" />
+          </div>
+          <div>
+            <img src={mario} alt="mario" />
+            <img src={epic} alt="mario" />
+          </div>
+          <div>
+            <img className="nwinsworld" src={marketplace1} alt="" />
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
