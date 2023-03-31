@@ -36,9 +36,10 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isProjectOpen, setIsProjectOpen] = useState(false);
-  const [isMarketOpen, setIsMarketOpen] = useState(true);
+  const [isMarketOpen, setIsMarketOpen] = useState(false);
+  const [ContactOpen, setContactOpen] = useState(false);
 
   return (
     <div>
@@ -49,6 +50,7 @@ const App = () => {
             setIsOpen={setIsOpen}
             setIsProjectOpen={setIsProjectOpen}
             setIsMarketOpen={setIsMarketOpen}
+            setContactOpen={setContactOpen}
           />
         )}
         {isProjectOpen && <ProjectWindow setIsProjectOpen={setIsProjectOpen} />}
@@ -59,7 +61,7 @@ const App = () => {
           setIsProjectOpen={setIsProjectOpen}
           setIsMarketOpen={setIsMarketOpen}
         />
-        <BottomBar />
+        <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} />
       </ThemeProvider>
     </div>
   );

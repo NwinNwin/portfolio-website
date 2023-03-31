@@ -16,6 +16,7 @@ export default function MyWindow({
   setIsOpen,
   setIsProjectOpen,
   setIsMarketOpen,
+  setContactOpen,
 }) {
   return (
     <div className="window-div">
@@ -47,6 +48,7 @@ export default function MyWindow({
               <AboutPage
                 setIsProjectOpen={setIsProjectOpen}
                 setIsMarketOpen={setIsMarketOpen}
+                setContactOpen={setContactOpen}
               />
             </div>
           </WindowContent>

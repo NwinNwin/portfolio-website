@@ -26,9 +26,12 @@ import market_header2 from "../../images/market_header2.jpeg";
 import market_header3 from "../../images/market_header3.jpeg";
 import market_header4 from "../../images/market_header4.jpeg";
 
+import handmade from "../../images/handmade.png";
+
 export default function MarketPage() {
   return (
     <div className="market-content">
+      <img className="handmade" src={handmade} alt="ebay" />
       <div>
         <img src={market_header1} />
         <img src={market_header2} />

@@ -18,7 +18,11 @@ import "./AboutPage.css";
 import AboutPost from "./AboutPosts";
 import DangNguyen_resume from "../../images/DangNguyen_resume.pdf";
 
-export default function AboutPage({ setIsProjectOpen, setIsMarketOpen }) {
+export default function AboutPage({
+  setIsProjectOpen,
+  setIsMarketOpen,
+  setContactOpen,
+}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -63,7 +67,14 @@ export default function AboutPage({ setIsProjectOpen, setIsMarketOpen }) {
                 >
                   Marketplace
                 </p>
-                <p style={{ cursor: "pointer" }}>Contact Me</p>
+                <p
+                  onClick={() => {
+                    setContactOpen(true);
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Contact Me
+                </p>
               </div>
             </GroupBox>
           </div>
