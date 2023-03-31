@@ -56,7 +56,7 @@
   }
 
   .box:first-child {
-    grid-row: 1;
+    height: 7vh;
   }
 
   .box:last-child {

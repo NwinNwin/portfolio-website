@@ -51,6 +51,12 @@ import antalert from "../../images/antalert.png";
 import morep from "../../images/morep.png";
 import moreproj from "../../images/moreproj.gif";
 
+import zotpals_text from "../../images/zotpals_text.png";
+import havefun_text from "../../images/havefun_text.png";
+import zelp_text from "../../images/zelp_text.png";
+import tttt_text from "../../images/tttt_text.png";
+import mp from "../../images/mp.png";
+
 import "./ProjectPage.css";
 
 export default function ProjectPage() {
@@ -134,7 +140,8 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <h1 className="project-1-title">Zotpals</h1>
+          {/* <h1 className="project-1-title">Zotpals</h1> */}
+          <img src={zotpals_text} alt="" />
           <div className="project-description">
             <div
               style={{
@@ -161,7 +168,10 @@ export default function ProjectPage() {
                 </div>
               </a>
 
-              <a href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/" target="_blank">
+              <a
+                href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/"
+                target="_blank"
+              >
                 <div className="uci-btn">
                   <img className="github" src={school} alt="" />
                   <p>&nbsp;UCI ICS</p>
@@ -194,7 +204,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <h1 className="project-1-title">HaveFun</h1>
+          <img src={havefun_text} alt="" />
           <div
             className="project-description"
             style={{
@@ -220,7 +230,10 @@ export default function ProjectPage() {
               joke challenges and create memes with a built-in generator.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/2mnguyen1/HackUCI-HaveFun" target="_blank">
+              <a
+                href="https://github.com/2mnguyen1/HackUCI-HaveFun"
+                target="_blank"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
@@ -250,7 +263,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <h1 className="project-1-title">Zelp</h1>
+          <img src={zelp_text} alt="" />
           <div className="project-description">
             <div
               style={{
@@ -306,7 +319,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <h1 className="project-1-title">TicTacToe+</h1>
+          <img src={tttt_text} alt="" />
           <div
             className="project-description"
             style={{ background: "rgb(151, 28, 28)" }}
@@ -330,7 +343,10 @@ export default function ProjectPage() {
               offline.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS" target="_blank">
+              <a
+                href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS"
+                target="_blank"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="" />
                   <p>&nbsp;GitHub</p>
@@ -366,7 +382,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <h1 className="project-1-title">More Projects</h1>
+          <img style={{ width: "90%" }} src={mp} alt="" />
           <div className="project-description">
             <div
               style={{

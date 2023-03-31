@@ -1,7 +1,7 @@
 .window-div {
   position: absolute;
   z-index: 7;
-  left: 20%;
+  left: 10%;
   top: 5%;
 }
 
@@ -20,7 +20,7 @@
   position: relative;
 }
 .window {
-  width: 75vw;
+  width: 90vw;
   min-height: 80vh;
   position: absolute;
   resize: both;

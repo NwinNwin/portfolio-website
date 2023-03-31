@@ -5,6 +5,7 @@ import comp from "../../images/comp.svg";
 import ebay from "../../images/ebay.png";
 import "./DesktopApp.css";
 import "98.css";
+import DangNguyen_resume from "../../images/DangNguyen_resume.pdf";
 
 export default function DesktopApp({
   setIsOpen,
@@ -40,10 +41,13 @@ export default function DesktopApp({
         <img className="desktop-logo" src={ebay} alt="" />
         <p>Ebay</p>
       </div>
-      <div style={{ cursor: "pointer" }}>
-        <img className="desktop-logo" src={comp} alt="" />
-        <p>Resume</p>
-      </div>
+
+      <a href={DangNguyen_resume} target="_blank">
+        <div style={{ cursor: "pointer" }}>
+          <img className="desktop-logo" src={comp} alt="" />
+          <p>Resume</p>
+        </div>
+      </a>
     </div>
   );
 }

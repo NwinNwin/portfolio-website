@@ -21,15 +21,19 @@ import mario from "../../images/mario.png";
 import epic from "../../images/epic.gif";
 import marketplace1 from "../../images/marketplace1.jpeg";
 
+import market_header1 from "../../images/market_header1.jpeg";
+import market_header2 from "../../images/market_header2.jpeg";
+import market_header3 from "../../images/market_header3.jpeg";
+import market_header4 from "../../images/market_header4.jpeg";
+
 export default function MarketPage() {
   return (
     <div className="market-content">
       <div>
-        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-browse_125x.jpg?v=132482183862390953861533492721" />
-        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-sell_125x.jpg?v=87926657540146666301533492750" />
-        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-services_125x.jpg?v=18256923694229474921533492759" />
-        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-help_125x.jpg?v=23361398229467722221533492736" />
-        <img src="//web.archive.org/web/20220904061413im_/https://cdn.shopify.com/s/files/1/2731/1388/t/11/assets/menu-community_125x.jpg?v=155361199490045294271533492729" />
+        <img src={market_header1} />
+        <img src={market_header2} />
+        <img src={market_header3} />
+        <img src={market_header4} />
       </div>
       <div class="container">
         <div class="box first">

@@ -16,6 +16,7 @@ import {
 import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
 import AboutPost from "./AboutPosts";
+import DangNguyen_resume from "../../images/DangNguyen_resume.pdf";
 
 export default function AboutPage({ setIsProjectOpen, setIsMarketOpen }) {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,10 @@ export default function AboutPage({ setIsProjectOpen, setIsMarketOpen }) {
                 >
                   Projects
                 </p>
-                <p style={{ cursor: "pointer" }}>Resume</p>
+
+                <a href={DangNguyen_resume} target="_blank">
+                  <p style={{ cursor: "pointer" }}>Resume</p>
+                </a>
                 <p
                   onClick={() => {
                     setIsMarketOpen(true);
