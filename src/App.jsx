@@ -61,7 +61,7 @@ const App = () => {
           setIsProjectOpen={setIsProjectOpen}
           setIsMarketOpen={setIsMarketOpen}
         />
-        <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} />
+        {/* <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} /> */}
       </ThemeProvider>
     </div>
   );
