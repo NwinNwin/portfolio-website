@@ -187,3 +187,34 @@
 .project-5 {
   background-image: url("bg3.jpg");
 }
+
+@media (max-width: 767px) {
+  .project-greeting {
+    font-size: 6vw;
+  }
+
+  .project-table-content {
+    font-size: 5vw;
+    font-weight: 100;
+  }
+  .seal {
+    display: none;
+  }
+
+  .bubble {
+    display: none;
+  }
+
+  .proj-text {
+    width: 100%;
+  }
+  .project-1 {
+    flex-direction: column;
+  }
+  .project-2 {
+    flex-direction: column;
+  }
+  .project-3 {
+    flex-direction: column;
+  }
+}

@@ -33,7 +33,7 @@ import hackuci2022 from "../../images/hackuci2022.jpg";
 export default function AboutPost() {
   return (
     <div className="all-posts">
-      <h3>News Feed</h3>
+      <h3 style={{ fontWeight: "bold" }}>News Feed</h3>
       <div className="user-post">
         <input
           type="text"

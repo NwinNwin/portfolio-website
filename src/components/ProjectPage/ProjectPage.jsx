@@ -75,9 +75,9 @@ export default function ProjectPage() {
           }}
         >
           <div>
-            <img src={bubble} alt="" />
-            <img src={seal} alt="" />
-            <img src={bubble} alt="" />
+            <img className="bubble" src={bubble} alt="" />
+            <img className="seal" src={seal} alt="" />
+            <img className="bubble" src={bubble} alt="" />
           </div>
           <div className="project-table-content">
             <a href="#zotpals" style={{ textDecoration: "none !important" }}>
@@ -109,9 +109,9 @@ export default function ProjectPage() {
             </div>
           </div>
           <div>
-            <img src={bubble} alt="" />
-            <img src={seal} alt="" />
-            <img src={bubble} alt="" />
+            <img className="bubble" src={bubble} alt="" />
+            <img className="seal" src={seal} alt="" />
+            <img className="bubble" src={bubble} alt="" />
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default function ProjectPage() {
 
         <div className="project-1-main">
           {/* <h1 className="project-1-title">Zotpals</h1> */}
-          <img src={zotpals_text} alt="" />
+          <img className="proj-text" src={zotpals_text} alt="" />
           <div className="project-description">
             <div
               style={{
@@ -204,7 +204,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img src={havefun_text} alt="" />
+          <img className="proj-text" src={havefun_text} alt="" />
           <div
             className="project-description"
             style={{
@@ -263,7 +263,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img src={zelp_text} alt="" />
+          <img className="proj-text" src={zelp_text} alt="" />
           <div className="project-description">
             <div
               style={{
@@ -319,7 +319,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img src={tttt_text} alt="" />
+          <img className="proj-text" src={tttt_text} alt="" />
           <div
             className="project-description"
             style={{ background: "rgb(151, 28, 28)" }}
@@ -382,7 +382,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img style={{ width: "90%" }} src={mp} alt="" />
+          <img className="proj-text" style={{ width: "90%" }} src={mp} alt="" />
           <div className="project-description">
             <div
               style={{

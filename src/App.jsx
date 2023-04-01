@@ -36,8 +36,8 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  const [isProjectOpen, setIsProjectOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isProjectOpen, setIsProjectOpen] = useState(true);
   const [isMarketOpen, setIsMarketOpen] = useState(false);
   const [ContactOpen, setContactOpen] = useState(false);
 
