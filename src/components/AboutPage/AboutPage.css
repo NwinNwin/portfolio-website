@@ -31,7 +31,7 @@
 }
 
 .user-post {
-  width: 500px;
+  /* width: 500px; */
   margin-top: 1%;
   padding-top: 2%;
   height: 12vh;
@@ -41,7 +41,7 @@
 }
 
 .all-posts {
-  width: 500px;
+  width: 100%;
 }
 
 .post-button {
@@ -113,4 +113,13 @@
 
 .info-title-box {
   margin: 5% 0;
+}
+
+@media (max-width: 767px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
 }

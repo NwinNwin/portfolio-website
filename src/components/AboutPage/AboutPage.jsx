@@ -34,7 +34,7 @@ export default function AboutPage({
           <h1>[ dang_nguyen ]</h1>
         </div>
         <div className="about-content">
-          <div>
+          <div className="group-box-div">
             <GroupBox
               style={{
                 marginRight: "30px",
