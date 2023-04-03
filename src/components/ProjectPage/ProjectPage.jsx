@@ -65,7 +65,7 @@ export default function ProjectPage() {
   return (
     <>
       <div>
-        <h1 className="project-greeting">Welcome to my Projects</h1>
+        <h1 className="project-greeting">Welcome to my Projects!</h1>
 
         <div
           style={{
@@ -152,8 +152,8 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "3.5vw" }} src={medal} alt="" />
-              <p>1ST Place @ UCI Webjam 2022.</p>
+              <img className="description-img" src={medal} alt="" />
+              <p className="award-text">1ST Place @ UCI Webjam 2022.</p>
             </div>
             <p>
               • A web application that allows users to list, borrow and browse
@@ -221,8 +221,8 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "3.5vw" }} src={medalhack} alt="" />
-              <p>"Best Meme Hack" @ HACKUCI 2023</p>
+              <img className="description-img" src={medalhack} alt="" />
+              <p className="award-text">"Best Meme Hack" @ HACKUCI 2023</p>
             </div>
             <p>
               • A social platform that emphasizes having fun and encourages its
@@ -263,7 +263,7 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text" src={zelp_text} alt="" />
+          <img className="proj-text zelp-text" src={zelp_text} alt="" />
           <div className="project-description">
             <div
               style={{
@@ -274,8 +274,8 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "3.5vw" }} src={tomato} alt="" />
-              <p>Participated @ ZotHacks 2021</p>
+              <img className="description-img" src={tomato} alt="" />
+              <p className="award-text">Participated @ ZotHacks 2021</p>
             </div>
             <p>
               • A website that allows students to mark locations on campus of
@@ -333,8 +333,8 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "1.5vw" }} src={comp} alt="" />
-              <p>&nbsp;Personal Project</p>
+              <img className="comp" src={comp} alt="" />
+              <p className="award-text">&nbsp;Personal Project</p>
             </div>
             <p>
               A Tic-Tac-Toe web game that features a clean and intuitive
@@ -382,7 +382,12 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text" style={{ width: "90%" }} src={mp} alt="" />
+          <img
+            className="proj-text more-proj"
+            style={{ width: "90%" }}
+            src={mp}
+            alt=""
+          />
           <div className="project-description">
             <div
               style={{

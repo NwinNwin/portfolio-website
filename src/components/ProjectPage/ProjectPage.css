@@ -188,14 +188,28 @@
   background-image: url("bg3.jpg");
 }
 
+.description-img {
+  width: 20%;
+}
+
+.comp {
+  width: 10%;
+}
+
+.award-text {
+  font-family: "Comic Sans MS", "Comic Neue", sans-serif;
+  font-size: 1.2rem;
+}
+/* MOBILE */
 @media (max-width: 767px) {
   .project-greeting {
-    font-size: 6vw;
+    font-size: 6.2vw;
   }
 
   .project-table-content {
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 100;
+    margin-bottom: 10%;
   }
   .seal {
     display: none;
@@ -206,7 +220,8 @@
   }
 
   .proj-text {
-    width: 100%;
+    width: 90%;
+    margin: 5% 0;
   }
   .project-1 {
     flex-direction: column;
@@ -216,5 +231,20 @@
   }
   .project-3 {
     flex-direction: column;
+  }
+
+  .project-thumbnail {
+    width: 100%;
+  }
+
+  .zelp-text {
+    width: 70%;
+  }
+  .project-description {
+    font-size: 4vw;
+  }
+  .more-proj {
+    width: 100% !important;
+    margin: 5% 0 !important;
   }
 }
