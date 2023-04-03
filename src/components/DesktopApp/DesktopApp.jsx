@@ -1,7 +1,6 @@
 import React from "react";
 import profile from "../../images/profile.png";
 import projects from "../../images/projects.svg";
-import comp from "../../images/comp.svg";
 import ebay from "../../images/ebay.png";
 import resume from "../../images/resume.png";
 import "./DesktopApp.css";
@@ -46,7 +45,7 @@ export default function DesktopApp({
         <p>Ebay</p>
       </div>
 
-      <a href={DangNguyen_resume} target="_blank">
+      <a href={DangNguyen_resume} target="_blank" rel="noreferrer">
         <div style={{ cursor: "pointer" }} className="logo-box">
           <img className="desktop-logo" src={resume} alt="" />
           <p>Resume</p>

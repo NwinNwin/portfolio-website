@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AppBar,
   Button,
@@ -36,21 +36,21 @@ export default function BottomBar({ ContactOpen, setContactOpen }) {
               }}
               onClick={() => setContactOpen(false)}
             >
-              <a href="https://github.com/NwinNwin" target="_blank">
+              <a href="https://github.com/NwinNwin" target="_blank" rel="noreferrer">
                 <MenuListItem>
                   <img style={{ width: "25px" }} src={github} alt="hi" />
                   <p>GitHub</p>
                 </MenuListItem>
               </a>
 
-              <a href="https://www.linkedin.com/in/nwin/" target="_blank">
+              <a href="https://www.linkedin.com/in/nwin/" target="_blank" rel="noreferrer">
                 <MenuListItem>
                   <img style={{ width: "25px" }} src={linkedin} alt="hi" />
                   <p> &nbsp; Linkedin</p>
                 </MenuListItem>
               </a>
 
-              <a href="mailto:dangnn1@uci.edu" target="_blank">
+              <a href="mailto:dangnn1@uci.edu" target="_blank" rel="noreferrer">
                 <MenuListItem>
                   <img style={{ width: "25px" }} src={email} alt="hi" />
                   <p> &nbsp; E-mail</p>
