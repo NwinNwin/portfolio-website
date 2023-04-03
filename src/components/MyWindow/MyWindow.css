@@ -34,7 +34,7 @@
 
 .max-window {
   width: 100vw;
-  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 .window:nth-child(2) {
   margin: 2rem;

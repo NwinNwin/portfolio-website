@@ -163,7 +163,7 @@ export default function ProjectPage() {
               >
                 <div className="uci-btn">
                   <img className="github" src={school} alt="alt7" />
-                  <p>&nbsp;UCI ICS</p>
+                  <p>&nbsp;UCI</p>
                 </div>
               </a>
             </div>

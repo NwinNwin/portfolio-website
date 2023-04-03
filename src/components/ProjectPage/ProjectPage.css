@@ -9,7 +9,7 @@
 
 .project-table-content {
   font-family: "Comic Neue", cursive;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.5rem;
   color: yellow;
   text-decoration: blue underline;
@@ -125,43 +125,49 @@
 }
 .github-btn {
   background-color: darkred;
-  padding: 0.8vw;
-  width: 70px;
+  padding: 1vw;
+  /* width: 50%; */
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  margin-right: 10%;
+  margin-right: 2%;
+  font-size: 1rem;
   border: 2px white solid;
 }
 
 .uci-btn {
   background-color: darkblue;
-  padding: 0.8vw;
-  width: 85px;
+  padding: 1vw;
+  /* width: 50%; */
   color: yellow;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 2%;
   border: 2px yellow solid;
+  font-size: 1rem;
 }
 
 .btn-div {
+  margin-top: 8%;
   display: flex;
   justify-content: center;
-  margin-top: 8%;
 }
 
 .website-btn {
   background-color: rgb(95, 89, 89);
-  padding: 0.8vw;
-  width: 70px;
+  padding: 1vw;
+  /* width: 100%; */
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  margin-left: 10%;
+  margin-left: 5%;
+  font-size: 1rem;
   border: 2px white solid;
 }
 
