@@ -405,7 +405,7 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "5vw" }} src={moreproj} alt="alt100" />
+              <img className="description-img" src={moreproj} alt="alt100" />
             </div>
             <p>
               I am a self-taught web developer and I learn to code in my spare
