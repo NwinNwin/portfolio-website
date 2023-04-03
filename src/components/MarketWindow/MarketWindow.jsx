@@ -1,35 +1,51 @@
-import React from "react";
-import {
-  Button,
-  Frame,
-  Toolbar,
-  Window,
-  WindowContent,
-  WindowHeader,
-  TextInput,
-} from "react95";
+import React, { useState } from "react";
+import { Button, Toolbar, Window, WindowContent, WindowHeader } from "react95";
 import "../MyWindow/MyWindow.css";
 import "./MarketWindow.css";
+import minimize from "../../images/minimize.svg";
+import maximize from "../../images/maximize.svg";
+import close from "../../images/close.svg";
 
-import Draggable, { DraggableCore } from "react-draggable";
+import Draggable from "react-draggable";
 import MarketPage from "../MarketPage/MarketPage";
 export default function MarketWindow({ setIsMarketOpen }) {
+  const [isMax, setIsMax] = useState(false);
+
   return (
-    <div className="market-window-div window-div">
-      <Draggable handle="strong">
-        <Window resizable className="window">
+    <div
+      className={
+        !isMax ? "market-window-div window-div" : "window-div max-window-div"
+      }
+    >
+      <Draggable
+        bounds={{ top: -70, left: -150, right: 10, bottom: 100 }}
+        handle="strong"
+        cancel=".btn"
+      >
+        <Window resizable className={!isMax ? "window" : "window max-window"}>
           <strong className="cursor">
             <WindowHeader className="title-bar">
               <div class="title-bar-text">Marketplace</div>
               <div class="title-bar-controls">
-                <Button aria-label="Minimize"></Button>
-                <Button aria-label="Maximize"></Button>
+                <Button className="btn">
+                  <img className="window-btn" src={minimize} alt="" />
+                </Button>
                 <Button
-                  aria-label="Close"
+                  onClick={() => {
+                    setIsMax(!isMax);
+                  }}
+                  className="btn"
+                >
+                  <img className="window-btn" src={maximize} alt="" />
+                </Button>
+                <Button
                   onClick={() => {
                     setIsMarketOpen(false);
                   }}
-                ></Button>
+                  className="btn"
+                >
+                  <img className="window-btn" src={close} alt="" />
+                </Button>
               </div>
             </WindowHeader>
           </strong>
@@ -45,7 +61,13 @@ export default function MarketWindow({ setIsMarketOpen }) {
             </Button>
           </Toolbar>
           <WindowContent>
-            <div className="market-content my-content">
+            <div
+              className={
+                !isMax
+                  ? "market-content my-content"
+                  : "market-content my-content max-my-content"
+              }
+            >
               <MarketPage />
             </div>
           </WindowContent>

@@ -1,35 +1,51 @@
-import React from "react";
-import {
-  Button,
-  Frame,
-  Toolbar,
-  Window,
-  WindowContent,
-  WindowHeader,
-  TextInput,
-} from "react95";
+import React, { useState } from "react";
+import { Button, Toolbar, Window, WindowContent, WindowHeader } from "react95";
 import "../MyWindow/MyWindow.css";
 import "./ProjectWindow.css";
+import minimize from "../../images/minimize.svg";
+import maximize from "../../images/maximize.svg";
+import close from "../../images/close.svg";
 
-import Draggable, { DraggableCore } from "react-draggable";
+import Draggable from "react-draggable";
 import ProjectPage from "../ProjectPage/ProjectPage";
 export default function ProjectWindow({ setIsProjectOpen }) {
+  const [isMax, setIsMax] = useState(false);
+
   return (
-    <div className="project-window-div window-div">
-      <Draggable handle="strong">
-        <Window resizable className="window">
+    <div
+      className={
+        !isMax ? "project-window-div window-div" : "window-div max-window-div"
+      }
+    >
+      <Draggable
+        bounds={{ top: -70, left: -100, right: 50, bottom: 100 }}
+        handle="strong"
+        cancel=".btn"
+      >
+        <Window resizable className={!isMax ? "window" : "window max-window"}>
           <strong className="cursor">
             <WindowHeader className="title-bar">
-              <div class="title-bar-text">Internet</div>
+              <div class="title-bar-text">Project</div>
               <div class="title-bar-controls">
-                <Button aria-label="Minimize"></Button>
-                <Button aria-label="Maximize"></Button>
+                <Button className="btn">
+                  <img className="window-btn" src={minimize} alt="" />
+                </Button>
                 <Button
-                  aria-label="Close"
+                  onClick={() => {
+                    setIsMax(!isMax);
+                  }}
+                  className="btn"
+                >
+                  <img className="window-btn" src={maximize} alt="" />
+                </Button>
+                <Button
                   onClick={() => {
                     setIsProjectOpen(false);
                   }}
-                ></Button>
+                  className="btn"
+                >
+                  <img className="window-btn" src={close} alt="" />
+                </Button>
               </div>
             </WindowHeader>
           </strong>
@@ -45,7 +61,13 @@ export default function ProjectWindow({ setIsProjectOpen }) {
             </Button>
           </Toolbar>
           <WindowContent>
-            <div className="project-content my-content">
+            <div
+              className={
+                !isMax
+                  ? "project-content my-content"
+                  : "project-content my-content max-my-content"
+              }
+            >
               <ProjectPage />
             </div>
           </WindowContent>

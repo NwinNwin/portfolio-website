@@ -1,17 +1,5 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Button,
-  MenuList,
-  MenuListItem,
-  Separator,
-  TextInput,
-  Toolbar,
-  GroupBox,
-  TreeLeaf,
-  TreeView,
-  ColorInput,
-} from "react95";
+import React from "react";
+import { GroupBox } from "react95";
 
 import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
@@ -23,12 +11,8 @@ export default function AboutPage({
   setIsMarketOpen,
   setContactOpen,
 }) {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
-      {/* <img src={welcome} alt="" /> */}
-
       <div>
         <div className="about-bg-pic">
           <h1>[ dang_nguyen ]</h1>
@@ -55,10 +39,6 @@ export default function AboutPage({
                 >
                   Projects
                 </p>
-
-                <a href={DangNguyen_resume} target="_blank">
-                  <p style={{ cursor: "pointer" }}>Resume</p>
-                </a>
                 <p
                   onClick={() => {
                     setIsMarketOpen(true);
@@ -67,6 +47,9 @@ export default function AboutPage({
                 >
                   Marketplace
                 </p>
+                <a href={DangNguyen_resume} target="_blank" rel="noreferrer">
+                  <p style={{ cursor: "pointer" }}>Resume</p>
+                </a>
                 <p
                   onClick={() => {
                     setContactOpen(true);

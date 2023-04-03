@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { MenuList, MenuListItem, Separator, styleReset } from "react95";
+import React, { useState } from "react";
+import { styleReset } from "react95";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import "./App.css";
 import BottomBar from "./components/BottomBar";
@@ -36,8 +36,8 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isProjectOpen, setIsProjectOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
   const [isMarketOpen, setIsMarketOpen] = useState(false);
   const [ContactOpen, setContactOpen] = useState(false);
 
@@ -61,7 +61,7 @@ const App = () => {
           setIsProjectOpen={setIsProjectOpen}
           setIsMarketOpen={setIsMarketOpen}
         />
-        {/* <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} /> */}
+        <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} />
       </ThemeProvider>
     </div>
   );

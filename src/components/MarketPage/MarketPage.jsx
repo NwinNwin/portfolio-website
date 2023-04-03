@@ -1,17 +1,4 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Button,
-  MenuList,
-  MenuListItem,
-  Separator,
-  TextInput,
-  Toolbar,
-  GroupBox,
-  TreeLeaf,
-  TreeView,
-  ColorInput,
-} from "react95";
+import React from "react";
 import "./MarketPage.css";
 
 import MarketItems from "./MarketItems";
@@ -32,17 +19,17 @@ export default function MarketPage() {
   return (
     <div className="market-content">
       <img className="handmade" src={handmade} alt="ebay" />
-      <div>
-        <img src={market_header1} />
-        <img src={market_header2} />
-        <img src={market_header3} />
-        <img src={market_header4} />
+      <div className="market-options-box">
+        <img className="market-options" src={market_header1} alt="ebay" />
+        <img className="market-options" src={market_header2} alt="ebay" />
+        <img className="market-options" src={market_header3} alt="ebay" />
+        <img className="market-options" src={market_header4} alt="ebay" />
       </div>
       <div class="container">
         <div class="box first">
           <img className="ebay-market" src={ebay} alt="ebay" />
           <div className="categories">Categories</div>
-          <ul id="categories-list">
+          <ul className="categories-list">
             <li>
               <p className="cata-txt">
                 Antiques
@@ -114,15 +101,20 @@ export default function MarketPage() {
           <MarketItems />
         </div>
         <div class="box">
-          <div>
-            <img className="nwinsworld" src={nwinsworld} alt="" />
+          <div style={{ display: "flex" }}>
+            <img className="nwinsworld" src={nwinsworld} alt="nwinsworld" />
+            <img className="epic no-desktop" src={epic} alt="mario" />
           </div>
-          <div>
+          <div className="no-mobile">
             <img src={mario} alt="mario" />
             <img src={epic} alt="mario" />
           </div>
           <div>
-            <img className="nwinsworld" src={marketplace1} alt="" />
+            <img
+              className="nwinsworld no-mobile"
+              src={marketplace1}
+              alt="marketplace"
+            />
           </div>
         </div>
       </div>

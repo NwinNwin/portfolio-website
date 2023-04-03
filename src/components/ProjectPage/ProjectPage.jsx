@@ -1,25 +1,11 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Button,
-  MenuList,
-  MenuListItem,
-  Separator,
-  TextInput,
-  Toolbar,
-  GroupBox,
-  TreeLeaf,
-  TreeView,
-  ColorInput,
-} from "react95";
+import React from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
 import bubble from "../../images/bubble.gif";
-import diver from "../../images/diver.png";
 import seal from "../../images/seal.gif";
-import zotpals from "../../images/zotpals.png";
+
 import zotpals1 from "../../images/zotpals1.png";
 import zotpals2 from "../../images/zotpals2.png";
 import zotpals3 from "../../images/zotpals3.png";
@@ -60,8 +46,6 @@ import mp from "../../images/mp.png";
 import "./ProjectPage.css";
 
 export default function ProjectPage() {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       <div>
@@ -75,9 +59,9 @@ export default function ProjectPage() {
           }}
         >
           <div>
-            <img className="bubble" src={bubble} alt="" />
-            <img className="seal" src={seal} alt="" />
-            <img className="bubble" src={bubble} alt="" />
+            <img className="bubble" src={bubble} alt="bubble" />
+            <img className="seal" src={seal} alt="seal" />
+            <img className="bubble" src={bubble} alt="bubble" />
           </div>
           <div className="project-table-content">
             <a href="#zotpals" style={{ textDecoration: "none !important" }}>
@@ -109,9 +93,9 @@ export default function ProjectPage() {
             </div>
           </div>
           <div>
-            <img className="bubble" src={bubble} alt="" />
-            <img className="seal" src={seal} alt="" />
-            <img className="bubble" src={bubble} alt="" />
+            <img className="bubble" src={bubble} alt="alt1" />
+            <img className="seal" src={seal} alt="alt2" />
+            <img className="bubble" src={bubble} alt="alt3" />
           </div>
         </div>
       </div>
@@ -122,26 +106,26 @@ export default function ProjectPage() {
 
         <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
-            <img src={zotpals1} />
+            <img src={zotpals1} alt="zotpals1" />
           </div>
           <div>
-            <img src={zotpals2} />
+            <img src={zotpals2} alt="zotpals1" />
           </div>
           <div>
-            <img src={zotpals3} />
+            <img src={zotpals3} alt="zotpals1" />
           </div>
           <div>
-            <img src={zotpals4} />
+            <img src={zotpals4} alt="zotpals1" />
           </div>
           <div>
-            <img src={zotpals5} />
+            <img src={zotpals5} alt="zotpals1" />
           </div>
         </Carousel>
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
           {/* <h1 className="project-1-title">Zotpals</h1> */}
-          <img className="proj-text" src={zotpals_text} alt="" />
+          <img className="proj-text" src={zotpals_text} alt="alt4" />
           <div className="project-description">
             <div
               style={{
@@ -152,7 +136,7 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img className="description-img" src={medal} alt="" />
+              <img className="description-img" src={medal} alt="alt5" />
               <p className="award-text">1ST Place @ UCI Webjam 2022.</p>
             </div>
             <p>
@@ -161,9 +145,13 @@ export default function ProjectPage() {
               relationship”.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/stevem-zhou/ZotPals" target="_blank">
+              <a
+                href="https://github.com/stevem-zhou/ZotPals"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
-                  <img className="github" src={github} alt="" />
+                  <img className="github" src={github} alt="alt6" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
@@ -171,9 +159,10 @@ export default function ProjectPage() {
               <a
                 href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="uci-btn">
-                  <img className="github" src={school} alt="" />
+                  <img className="github" src={school} alt="alt7" />
                   <p>&nbsp;UCI ICS</p>
                 </div>
               </a>
@@ -189,22 +178,22 @@ export default function ProjectPage() {
           showThumbs={false}
         >
           <div>
-            <img src={havefun1} />
+            <img src={havefun1} alt="zotpals1" />
           </div>
           <div>
-            <img src={havefun2} />
+            <img src={havefun2} alt="zotpals1" />
           </div>
           <div>
-            <img src={havefun4} />
+            <img src={havefun4} alt="zotpals1" />
           </div>
           <div>
-            <img src={havefun5} />
+            <img src={havefun5} alt="zotpals1" />
           </div>
         </Carousel>
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text" src={havefun_text} alt="" />
+          <img className="proj-text" src={havefun_text} alt="alt8" />
           <div
             className="project-description"
             style={{
@@ -221,7 +210,7 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img className="description-img" src={medalhack} alt="" />
+              <img className="description-img" src={medalhack} alt="alt9" />
               <p className="award-text">"Best Meme Hack" @ HACKUCI 2023</p>
             </div>
             <p>
@@ -233,16 +222,21 @@ export default function ProjectPage() {
               <a
                 href="https://github.com/2mnguyen1/HackUCI-HaveFun"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="github-btn">
-                  <img className="github" src={github} alt="" />
+                  <img className="github" src={github} alt="alt0" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/havefun" target="_blank">
+              <a
+                href="https://devpost.com/software/havefun"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="uci-btn">
-                  <img className="github" src={school} alt="" />
+                  <img className="github" src={school} alt="alt11" />
                   <p>&nbsp;DevPost</p>
                 </div>
               </a>
@@ -254,16 +248,16 @@ export default function ProjectPage() {
       <div className="project-3" id="zelp">
         <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
-            <img src={zelp1} />
+            <img src={zelp1} alt="zotpals1" />
           </div>
           <div>
-            <img src={zelp2} />
+            <img src={zelp2} alt="zotpals1" />
           </div>
         </Carousel>
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text zelp-text" src={zelp_text} alt="" />
+          <img className="proj-text zelp-text" src={zelp_text} alt="alt12" />
           <div className="project-description">
             <div
               style={{
@@ -274,7 +268,7 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img className="description-img" src={tomato} alt="" />
+              <img className="description-img" src={tomato} alt="alt13" />
               <p className="award-text">Participated @ ZotHacks 2021</p>
             </div>
             <p>
@@ -283,16 +277,24 @@ export default function ProjectPage() {
               and filter to one of the essentials that they would like to view.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/Bryan-Phung/zelp" target="_blank">
+              <a
+                href="https://github.com/Bryan-Phung/zelp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
-                  <img className="github" src={github} alt="" />
+                  <img className="github" src={github} alt="alt14" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/zelp" target="_blank">
+              <a
+                href="https://devpost.com/software/zelp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="uci-btn">
-                  <img className="github" src={school} alt="" />
+                  <img className="github" src={school} alt="alt15" />
                   <p>&nbsp;DevPost</p>
                 </div>
               </a>
@@ -304,22 +306,22 @@ export default function ProjectPage() {
       <div className="project-3 project-4" id="tictactoe">
         <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
-            <img src={ttt2} />
+            <img src={ttt2} alt="zotpals1" />
           </div>
           <div>
-            <img src={ttt4} />
+            <img src={ttt4} alt="zotpals1" />
           </div>
           <div>
-            <img src={ttt3} />
+            <img src={ttt3} alt="zotpals1" />
           </div>
           <div>
-            <img src={ttt1} />
+            <img src={ttt1} alt="zotpals1" />
           </div>
         </Carousel>
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text" src={tttt_text} alt="" />
+          <img className="proj-text" src={tttt_text} alt="alt16" />
           <div
             className="project-description"
             style={{ background: "rgb(151, 28, 28)" }}
@@ -333,7 +335,7 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img className="comp" src={comp} alt="" />
+              <img className="comp" src={comp} alt="alt17" />
               <p className="award-text">&nbsp;Personal Project</p>
             </div>
             <p>
@@ -346,16 +348,21 @@ export default function ProjectPage() {
               <a
                 href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div className="github-btn">
-                  <img className="github" src={github} alt="" />
+                  <img className="github" src={github} alt="alt18" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://tic-tac-toe-plus.netlify.app/" target="_blank">
+              <a
+                href="https://tic-tac-toe-plus.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="website-btn">
-                  <img className="github" src={comp} alt="" />
+                  <img className="github" src={comp} alt="alt19" />
                   <p>&nbsp;Website</p>
                 </div>
               </a>
@@ -367,15 +374,15 @@ export default function ProjectPage() {
       <div className="project-3 project-5" id="mp">
         <Carousel className="project-thumbnail" showThumbs={false}>
           <div>
-            <img src={antalert} />
+            <img src={antalert} alt="zotpals1" />
             <p className="legend">AntAlert</p>
           </div>
           <div>
-            <img src={ctc} />
+            <img src={ctc} alt="zotpals1" />
             <p className="legend">CTC Wasteless</p>
           </div>
           <div>
-            <img src={morep} />
+            <img src={morep} alt="zotpals1" />
             <p className="legend">Learning Projects</p>
           </div>
         </Carousel>
@@ -386,7 +393,7 @@ export default function ProjectPage() {
             className="proj-text more-proj"
             style={{ width: "90%" }}
             src={mp}
-            alt=""
+            alt="alt10"
           />
           <div className="project-description">
             <div
@@ -398,16 +405,20 @@ export default function ProjectPage() {
                 justifyContent: "center",
               }}
             >
-              <img style={{ width: "5vw" }} src={moreproj} alt="" />
+              <img style={{ width: "5vw" }} src={moreproj} alt="alt100" />
             </div>
             <p>
               I am a self-taught web developer and I learn to code in my spare
               time. Come to check out my progress on GitHub!
             </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin" target="_blank">
+              <a
+                href="https://github.com/NwinNwin"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
-                  <img className="github" src={github} alt="" />
+                  <img className="github" src={github} alt="alt100" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>

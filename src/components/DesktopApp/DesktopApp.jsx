@@ -1,8 +1,9 @@
 import React from "react";
-import profile from "../../images/profile.svg";
+import profile from "../../images/profile.png";
 import projects from "../../images/projects.svg";
 import comp from "../../images/comp.svg";
 import ebay from "../../images/ebay.png";
+import resume from "../../images/resume.png";
 import "./DesktopApp.css";
 import "98.css";
 import DangNguyen_resume from "../../images/DangNguyen_resume.pdf";
@@ -19,6 +20,7 @@ export default function DesktopApp({
           setIsOpen(true);
         }}
         style={{ cursor: "pointer" }}
+        className="logo-box"
       >
         <img className="desktop-logo" src={profile} alt="" />
         <p>Profile</p>
@@ -28,6 +30,7 @@ export default function DesktopApp({
           setIsProjectOpen(true);
         }}
         style={{ cursor: "pointer" }}
+        className="logo-box"
       >
         <img className="desktop-logo" src={projects} alt="" />
         <p>Projects</p>
@@ -37,14 +40,15 @@ export default function DesktopApp({
           setIsMarketOpen(true);
         }}
         style={{ cursor: "pointer" }}
+        className="logo-box"
       >
         <img className="desktop-logo" src={ebay} alt="" />
         <p>Ebay</p>
       </div>
 
       <a href={DangNguyen_resume} target="_blank">
-        <div style={{ cursor: "pointer" }}>
-          <img className="desktop-logo" src={comp} alt="" />
+        <div style={{ cursor: "pointer" }} className="logo-box">
+          <img className="desktop-logo" src={resume} alt="" />
           <p>Resume</p>
         </div>
       </a>

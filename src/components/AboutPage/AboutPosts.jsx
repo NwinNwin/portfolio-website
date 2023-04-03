@@ -1,17 +1,4 @@
-import React, { useState } from "react";
-import {
-  AppBar,
-  Button,
-  MenuList,
-  MenuListItem,
-  Separator,
-  TextInput,
-  Toolbar,
-  GroupBox,
-  TreeLeaf,
-  TreeView,
-  ColorInput,
-} from "react95";
+import React from "react";
 
 import myselfpixel from "../../images/myselfpixel.png";
 import "./AboutPage.css";
@@ -304,7 +291,7 @@ export default function AboutPost() {
         </div>
 
         <div className="description">
-          <p>HackUCI 2022: ANOTHER HACKATHON ANOTHER PRIZE!🏅</p>
+          <p>HackUCI 2022: ANOTHER HACKATHON ANOTHER W!🏅</p>
         </div>
         <div
           style={{

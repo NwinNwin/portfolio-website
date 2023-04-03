@@ -6,14 +6,22 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 5px;
   font-family: "Times New Roman", Times, serif;
-  margin: 0 100px;
+  margin-left: 10%;
+}
+
+.market-options-box {
+  margin-bottom: 3%;
+}
+
+.no-desktop {
+  display: none;
 }
 
 .handmade {
-  width: 35vw;
+  width: 50%;
 }
 
 .ebay-market {
@@ -22,10 +30,10 @@
 
 .categories {
   padding: 8px;
-  font-size: 1.5vw;
+  font-size: 1rem;
   background: #f8ca02;
-  width: 8vw;
   text-align: center;
+  width: 50%;
   color: #000;
 }
 
@@ -40,6 +48,7 @@
 
 .market-items {
   width: 15vw;
+  height: 15vw;
 }
 
 .items-box {
@@ -49,21 +58,70 @@
   border: 2px solid white;
   text-align: center;
 }
+.items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 20px;
+}
 
 .nwinsworld {
   width: 18vw;
 }
 @media only screen and (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60px 3fr;
     grid-template-rows: auto auto;
+    margin: 0;
+  }
+  .items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .box:first-child {
-    height: 7vh;
+  .market-options {
+    width: 25%;
   }
-
-  .box:last-child {
-    grid-row: 2;
+  .market-options-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  .ebay-market {
+    width: 100%;
+  }
+  .cata-txt {
+    font-size: 0.4rem;
+  }
+  .handmade {
+    width: 100%;
+  }
+  .market-items {
+    width: 22vw;
+    height: 22vw;
+  }
+  .categories {
+    padding: 0;
+    font-size: 0.3rem;
+    width: 50%;
+  }
+  .items-box {
+    margin: 0;
+    width: 100%;
+    padding: 2px;
+    border: 2px solid white;
+    text-align: center;
+  }
+  .nwinsworld {
+    width: 50vw;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .epic {
+    width: 20vw;
+  }
+  .no-desktop {
+    display: block;
   }
 }
