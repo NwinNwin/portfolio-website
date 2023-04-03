@@ -27,7 +27,12 @@ export default function MarketWindow({ setIsMarketOpen }) {
             <WindowHeader className="title-bar">
               <div class="title-bar-text">Marketplace</div>
               <div class="title-bar-controls">
-                <Button className="btn">
+                <Button
+                  onClick={() => {
+                    setIsMarketOpen(false);
+                  }}
+                  className="btn"
+                >
                   <img className="window-btn" src={minimize} alt="" />
                 </Button>
                 <Button

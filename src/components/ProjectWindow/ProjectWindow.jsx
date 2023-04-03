@@ -27,7 +27,12 @@ export default function ProjectWindow({ setIsProjectOpen }) {
             <WindowHeader className="title-bar">
               <div class="title-bar-text">Project</div>
               <div class="title-bar-controls">
-                <Button className="btn">
+                <Button
+                  onClick={() => {
+                    setIsProjectOpen(false);
+                  }}
+                  className="btn"
+                >
                   <img className="window-btn" src={minimize} alt="" />
                 </Button>
                 <Button
