@@ -13,7 +13,6 @@
   font-size: 2.5rem;
   color: yellow;
   text-decoration: blue underline;
-  -webkit-text-stroke: 2px black; /* width and color */
   /* cursor: pointer; */
   text-align: center;
 }
