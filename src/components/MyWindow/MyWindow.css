@@ -1,7 +1,7 @@
 .window-div {
   position: absolute;
   z-index: 2;
-  left: 8%;
+  left: 13%;
   top: 2%;
 }
 
@@ -25,7 +25,7 @@
   position: relative;
 }
 .window {
-  width: 90vw;
+  width: 80vw;
   min-height: 80vh;
   position: absolute;
   resize: both;
@@ -65,4 +65,15 @@
 .title-bar-text {
   font-size: 1rem;
   margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .window {
+    width: 90vw;
+    min-height: 80vh;
+  }
+  .window-div {
+    left: 8%;
+    top: 2%;
+  }
 }

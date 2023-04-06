@@ -1,8 +1,15 @@
 .project-window-div {
   top: 4%;
-  left: 7%;
+  left: 11%;
 }
 
 .project-content {
   background-image: url("water.gif");
+}
+
+@media (max-width: 767px) {
+  .project-window-div {
+    top: 4%;
+    left: 7%;
+  }
 }
