@@ -76,4 +76,15 @@
     left: 8%;
     top: 2%;
   }
+  .max-my-content {
+    height: 75vh;
+  }
+  .max-window {
+    width: 100vw;
+    min-height: -webkit-fill-available;
+  }
+  .max-window-div {
+    left: 0;
+    top: 0;
+  }
 }
