@@ -24,11 +24,7 @@ export default function MyWindow({
 
   return (
     <div className={!isMax ? "window-div" : "window-div max-window-div"}>
-      <Draggable
-        bounds={{ top: -30, left: -100, right: 50, bottom: 100 }}
-        handle="strong"
-        cancel=".btn"
-      >
+      <Draggable handle="strong" cancel=".btn">
         <Window resizable className={!isMax ? "window" : "window max-window"}>
           <strong className="cursor">
             <WindowHeader className="title-bar">

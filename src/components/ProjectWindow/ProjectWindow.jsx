@@ -17,11 +17,7 @@ export default function ProjectWindow({ setIsProjectOpen }) {
         !isMax ? "project-window-div window-div" : "window-div max-window-div"
       }
     >
-      <Draggable
-        bounds={{ top: -70, left: -100, right: 50, bottom: 100 }}
-        handle="strong"
-        cancel=".btn"
-      >
+      <Draggable handle="strong" cancel=".btn">
         <Window resizable className={!isMax ? "window" : "window max-window"}>
           <strong className="cursor">
             <WindowHeader className="title-bar">
