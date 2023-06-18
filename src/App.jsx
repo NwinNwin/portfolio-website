@@ -45,22 +45,11 @@ const App = () => {
     <div>
       <GlobalStyles />
       <ThemeProvider theme={original}>
-        {isOpen && (
-          <MyWindow
-            setIsOpen={setIsOpen}
-            setIsProjectOpen={setIsProjectOpen}
-            setIsMarketOpen={setIsMarketOpen}
-            setContactOpen={setContactOpen}
-          />
-        )}
+        {isOpen && <MyWindow setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} setIsMarketOpen={setIsMarketOpen} setContactOpen={setContactOpen} />}
         {isProjectOpen && <ProjectWindow setIsProjectOpen={setIsProjectOpen} />}
         {isMarketOpen && <MarketWindow setIsMarketOpen={setIsMarketOpen} />}
 
-        <DesktopApp
-          setIsOpen={setIsOpen}
-          setIsProjectOpen={setIsProjectOpen}
-          setIsMarketOpen={setIsMarketOpen}
-        />
+        <DesktopApp setIsOpen={setIsOpen} setIsProjectOpen={setIsProjectOpen} setIsMarketOpen={setIsMarketOpen} />
         <BottomBar ContactOpen={ContactOpen} setContactOpen={setContactOpen} />
       </ThemeProvider>
     </div>

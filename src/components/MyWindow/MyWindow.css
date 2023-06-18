@@ -1,7 +1,7 @@
 .window-div {
   position: absolute;
   z-index: 2;
-  left: 13%;
+  left: 20%;
   top: 2%;
 }
 
@@ -25,8 +25,8 @@
   position: relative;
 }
 .window {
-  width: 80vw;
-  min-height: 80vh;
+  width: 70vw;
+  min-height: 70vh;
   position: absolute;
   resize: both;
   overflow: auto;
@@ -49,8 +49,7 @@
 
 .my-content {
   background: #fff;
-  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf,
-    inset 2px 2px #0a0a0a;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
   display: block;
   margin: 0;
   padding: 10px;

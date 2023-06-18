@@ -42,6 +42,10 @@
   color: yellow;
 }
 
+.zotnfound-logo-img {
+  width: 10%;
+}
+
 .project-description {
   font-family: "Times New Roman", Times, serif;
   font-size: 1vw;
@@ -107,6 +111,21 @@
   margin: 5% 0;
 }
 
+.project-0 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg0.jpg");
+
+  margin: 5% auto 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 90%;
+  box-shadow: 0 0 30px 19px rgb(161, 161, 94);
+  border-radius: 40px;
+}
+
 .project-3-title {
   font-family: "Times New Roman", Times, serif;
   font-size: 5vw;
@@ -148,6 +167,21 @@
   border-radius: 10px;
   margin-left: 2%;
   border: 2px yellow solid;
+  font-size: 1rem;
+}
+
+.devpost-btn {
+  background-color: rgb(244, 244, 244);
+  padding: 1vw;
+  /* width: 50%; */
+  color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 2%;
+  border: 2px blue solid;
   font-size: 1rem;
 }
 
@@ -195,16 +229,31 @@
 }
 
 .description-img {
-  width: 20%;
+  width: 12vh;
+}
+
+.ttt-img {
+  border-radius: 20px;
+}
+
+.zelp-img {
+  width: 18vh;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .comp {
   width: 10%;
 }
 
+.havefun-logo {
+  border-radius: 20px;
+}
+
 .award-text {
   font-family: "Comic Sans MS", "Comic Neue", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 /* MOBILE */
 @media (max-width: 767px) {
@@ -229,6 +278,9 @@
     width: 90%;
     margin: 5% 0;
   }
+  .project-0 {
+    flex-direction: column;
+  }
   .project-1 {
     flex-direction: column;
   }
@@ -246,6 +298,7 @@
   .zelp-text {
     width: 70%;
   }
+
   .project-description {
     font-size: 4vw;
   }

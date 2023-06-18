@@ -21,7 +21,7 @@ export default function AboutPost() {
   return (
     <div className="all-posts">
       <h3 style={{ fontWeight: "bold" }}>News Feed</h3>
-      <div className="user-post">
+      {/* <div className="user-post">
         <input
           type="text"
           style={{
@@ -37,7 +37,7 @@ export default function AboutPost() {
           </p>
           <button className="post-button">Post message</button>
         </div>
-      </div>
+      </div> */}
 
       <div className="postings">
         <div className="post-owner">
