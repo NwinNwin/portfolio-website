@@ -79,7 +79,10 @@ export default function AboutPage({
 
                 <div className="info-title-box">
                   <p className="info-title">Frontend:</p>
-                  <p className="info-text">HTML/CSS • ReactJS</p>
+                  <p className="info-text">
+                    {" "}
+                    ReactJS • HTML/CSS • React Native
+                  </p>
                 </div>
 
                 <div className="info-title-box">
@@ -92,7 +95,7 @@ export default function AboutPage({
                 <div className="info-title-box">
                   <p className="info-title">Technologies:</p>
                   <p className="info-text">
-                    Git • GitHub • Rest API • Postman • VSCode • Eclipse
+                    Git • GitHub • AWS • Rest API • Postman • VSCode • Eclipse
                   </p>
                 </div>
               </div>

@@ -95,7 +95,10 @@ export default function ProjectPage() {
               </a>
             </div>
             <div>
-              <a href="#tictactoe" style={{ textDecoration: "none !important" }}>
+              <a
+                href="#tictactoe"
+                style={{ textDecoration: "none !important" }}
+              >
                 5. TicTacToe+
               </a>
             </div>
@@ -116,7 +119,10 @@ export default function ProjectPage() {
 
       {/* ZotnFound */}
       <div className="project-0" id="zotnfound">
-        <Carousel className="project-thumbnail project-2-color" showThumbs={false}>
+        <Carousel
+          className="project-thumbnail project-2-color"
+          showThumbs={false}
+        >
           <div>
             <img src={zotnfound_3} alt="zotpals1" />
           </div>
@@ -148,21 +154,30 @@ export default function ProjectPage() {
                 marginBottom: "5%",
               }}
             >
-              <p className="award-text">Best Overall [Runner Up] @VenusHack 2023</p>
+              <p className="award-text">
+                Best Overall [Runner Up] @VenusHack 2023
+              </p>
             </div>
-            <p>• A platform designed for UCI students, allowing them to effortlessly locate and recover lost or found items, ensuring their safe return.</p>
+            <p>
+              • A platform designed for UCI students, allowing them to
+              effortlessly locate and recover lost or found items, ensuring
+              their safe return.
+            </p>
             <div className="btn-div">
-              <a href="https://github.com/stevem-zhou/ZotnFound" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/stevem-zhou/ZotnFound"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt0" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/zotnfound" target="_blank" rel="noreferrer">
+              <a href="https://zotnfound.com" target="_blank" rel="noreferrer">
                 <div className="devpost-btn">
-                  <img className="github" src={devpost_logo} alt="alt11" />
-                  <p>&nbsp;DevPost</p>
+                  <p>🌐&nbsp;Website</p>
                 </div>
               </a>
             </div>
@@ -206,16 +221,28 @@ export default function ProjectPage() {
             >
               <p className="award-text">1ST Place @ UCI Webjam 2022.</p>
             </div>
-            <p>• A web application that allows users to list, borrow and browse items for things they may need without the hassle of “having a relationship”.</p>
+            <p>
+              • A web application that allows users to list, borrow and browse
+              items for things they may need without the hassle of “having a
+              relationship”.
+            </p>
             <div className="btn-div">
-              <a href="https://github.com/stevem-zhou/ZotPals" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/stevem-zhou/ZotPals"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt6" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.cs.uci.edu/ics-student-council-announces-winning-projects-from-webjam-2022/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="uci-btn">
                   <img className="github" src={school} alt="alt7" />
                   <p>&nbsp;UCI</p>
@@ -228,7 +255,10 @@ export default function ProjectPage() {
 
       {/* HAVEFUN */}
       <div className="project-2" id="havefun">
-        <Carousel className="project-thumbnail project-2-color" showThumbs={false}>
+        <Carousel
+          className="project-thumbnail project-2-color"
+          showThumbs={false}
+        >
           <div>
             <img src={havefun1} alt="zotpals1" />
           </div>
@@ -253,7 +283,11 @@ export default function ProjectPage() {
               boxShadow: "0 0 30px 5px rgb(216, 216, 140)",
             }}
           >
-            <img className="description-img havefun-logo" src={havefun_logo} alt="alt9" />
+            <img
+              className="description-img havefun-logo"
+              src={havefun_logo}
+              alt="alt9"
+            />
 
             <div
               style={{
@@ -263,18 +297,27 @@ export default function ProjectPage() {
               <p className="award-text">"Best Meme Hack" @ HACKUCI 2023</p>
             </div>
             <p>
-              • A social platform that emphasizes having fun and encourages its users to share their moments of enjoyment, participate in daily joke challenges and create memes with a built-in
-              generator.
+              • A social platform that emphasizes having fun and encourages its
+              users to share their moments of enjoyment, participate in daily
+              joke challenges and create memes with a built-in generator.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/2mnguyen1/HackUCI-HaveFun" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/2mnguyen1/HackUCI-HaveFun"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt0" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/havefun" target="_blank" rel="noreferrer">
+              <a
+                href="https://devpost.com/software/havefun"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="devpost-btn">
                   <img className="github" src={devpost_logo} alt="alt11" />
                   <p>&nbsp;DevPost</p>
@@ -311,18 +354,27 @@ export default function ProjectPage() {
               <p className="award-text">Participated @ ZotHacks 2021</p>
             </div>
             <p>
-              • A website that allows students to mark locations on campus of utilities, add caption reviews of each location marked on the map, and filter to one of the essentials that they would
-              like to view.
+              • A website that allows students to mark locations on campus of
+              utilities, add caption reviews of each location marked on the map,
+              and filter to one of the essentials that they would like to view.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/Bryan-Phung/zelp" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Bryan-Phung/zelp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt14" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://devpost.com/software/zelp" target="_blank" rel="noreferrer">
+              <a
+                href="https://devpost.com/software/zelp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="devpost-btn">
                   <img className="github" src={devpost_logo} alt="alt15" />
                   <p>&nbsp;DevPost</p>
@@ -352,8 +404,15 @@ export default function ProjectPage() {
 
         <div className="project-1-main">
           <img className="proj-text" src={tttt_text} alt="alt16" />
-          <div className="project-description" style={{ background: "rgb(151, 28, 28)" }}>
-            <img className="description-img ttt-img" src={ttt_logo} alt="alt17" />
+          <div
+            className="project-description"
+            style={{ background: "rgb(151, 28, 28)" }}
+          >
+            <img
+              className="description-img ttt-img"
+              src={ttt_logo}
+              alt="alt17"
+            />
             <div
               style={{
                 marginBottom: "5%",
@@ -362,18 +421,28 @@ export default function ProjectPage() {
               <p className="award-text">&nbsp;Personal Project</p>
             </div>
             <p>
-              A Tic-Tac-Toe web game that features a clean and intuitive interface making it easy for players of all skill levels to jump right into the action. There are three modes: AI, multiplayer,
-              and offline.
+              A Tic-Tac-Toe web game that features a clean and intuitive
+              interface making it easy for players of all skill levels to jump
+              right into the action. There are three modes: AI, multiplayer, and
+              offline.
             </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/NwinNwin/Tic-Tac-Toe-PLUS"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt18" />
                   <p>&nbsp;GitHub</p>
                 </div>
               </a>
 
-              <a href="https://tic-tac-toe-plus.netlify.app/" target="_blank" rel="noreferrer">
+              <a
+                href="https://tic-tac-toe-plus.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="website-btn">
                   <img className="github" src={comp} alt="alt19" />
                   <p>&nbsp;Website</p>
@@ -402,7 +471,12 @@ export default function ProjectPage() {
         {/* <p className="legend">Landing Page</p> */}
 
         <div className="project-1-main">
-          <img className="proj-text more-proj" style={{ width: "90%" }} src={mp} alt="alt10" />
+          <img
+            className="proj-text more-proj"
+            style={{ width: "90%" }}
+            src={mp}
+            alt="alt10"
+          />
           <div className="project-description">
             <div
               style={{
@@ -415,9 +489,16 @@ export default function ProjectPage() {
             >
               <img className="description-img" src={moreproj} alt="alt100" />
             </div>
-            <p>I am a self-taught web developer and I learn to code in my spare time. Come to check out my progress on GitHub!</p>
+            <p>
+              I am a self-taught web developer and I learn to code in my spare
+              time. Come to check out my progress on GitHub!
+            </p>
             <div className="btn-div">
-              <a href="https://github.com/NwinNwin" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/NwinNwin"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="github-btn">
                   <img className="github" src={github} alt="alt100" />
                   <p>&nbsp;GitHub</p>

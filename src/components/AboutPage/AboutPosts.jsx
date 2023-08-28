@@ -16,6 +16,8 @@ import firstplace from "../../images/firstplace.jpg";
 import zotpals from "../../images/zotpals.png";
 import havefun from "../../images/havefun.png";
 import hackuci2022 from "../../images/hackuci2022.jpg";
+import zotnfound_big from "../../images/zotnfound_big.png";
+import zotnfound_win from "../../images/zotnfound_win.png";
 
 export default function AboutPost() {
   return (
@@ -107,13 +109,13 @@ export default function AboutPost() {
             }}
           >
             <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>November 20, 2021 🌎</p>
+            <p>ZotHacks 2021 🌎</p>
           </div>
         </div>
 
         <div className="description">
-          <p>FIRST HACKATHON!!!!</p>
-          <p>learn more...</p>
+          <p>FIRST HACKATHON!</p>
+          <p>OHHH THAT'S HOW WEBSITE ARE MADE</p>
         </div>
         <div
           style={{
@@ -286,12 +288,12 @@ export default function AboutPost() {
             }}
           >
             <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>HackUCI 2022 🌎</p>
+            <p>HACK @ UCI 2023 🌎</p>
           </div>
         </div>
 
         <div className="description">
-          <p>HackUCI 2022: ANOTHER HACKATHON ANOTHER W!🏅</p>
+          <p>HACK @ UCI 2023: ANOTHER HACKATHON ANOTHER W!🏅</p>
         </div>
         <div
           style={{
@@ -303,6 +305,36 @@ export default function AboutPost() {
         >
           <img className="post-pic-big" src={hackuci2022} alt="school" />
           <img className="post-pic-big" src={havefun} alt="school" />
+        </div>
+        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
+      </div>
+
+      <div className="postings">
+        <div className="post-owner">
+          <img className="pfp-post" src={myselfpixel} alt="pfp" />
+          <div
+            style={{
+              marginLeft: "15px",
+            }}
+          >
+            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
+            <p>Venus Hack 2023 🌎</p>
+          </div>
+        </div>
+
+        <div className="description">
+          <p>Venus Hack 2023: SECOND PLACE🏅</p>
+        </div>
+        <div
+          style={{
+            margin: "2% 0",
+            textAlign: "center",
+            background: "white",
+            padding: "3%",
+          }}
+        >
+          <img className="post-pic-big" src={zotnfound_win} alt="school" />
+          <img className="post-pic-big" src={zotnfound_big} alt="school" />
         </div>
         <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
       </div>
