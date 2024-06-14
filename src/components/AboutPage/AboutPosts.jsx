@@ -1,6 +1,5 @@
-import React from "react";
-
-import myselfpixel from "../../images/myselfpixel.png";
+import { useState } from "react";
+import { Button } from "react95";
 import "./AboutPage.css";
 import school from "../../images/school.png";
 import py from "../../images/py.gif";
@@ -19,325 +18,101 @@ import hackuci2022 from "../../images/hackuci2022.jpg";
 import zotnfound_big from "../../images/zotnfound_big.png";
 import zotnfound_win from "../../images/zotnfound_win.png";
 
+import Post from "./Posts/Post";
+
+const postsData = [
+  {
+    post_img: school,
+    date: "August, 2021 🌎",
+    description: "UCI🎓: Major in Computer Science, Class of 2025",
+  },
+  {
+    post_img: py,
+    date: "August, 2021 🌎",
+    description: "Python: My first language (ICS-31)",
+  },
+  {
+    post_img: [first_hackathon, zelp],
+    date: "ZotHacks 2021 🌎",
+    description: "FIRST HACKATHON! OHHH THAT'S HOW WEBSITE ARE MADE",
+    isLarge: true,
+  },
+  {
+    post_img: [venus, pter],
+    date: "May 20, 2022 🌎",
+    description: "2ND Hackathon. didnt win but we had soo muchh fun",
+    isLarge: true,
+  },
+  {
+    post_img: [webdev, udemy],
+    date: "Summer, 2022 🌎",
+    description: "I JUST LEARNED WEB DEV ONLINE!",
+    isLarge: true,
+  },
+  {
+    post_img: ctc,
+    date: "October, 2022 🌎",
+    description: "Developer at Commit The Change! Wohooooooooo!",
+  },
+  {
+    post_img: cpp,
+    date: "Winter, 2022 🌎",
+    description: "Data Structure and Algorithm class IS HARDDDDD!!!😔",
+  },
+  {
+    post_img: [firstplace, zotpals],
+    date: "Webjam 2022 🌎",
+    description: "Webjam 2022: FIRST PLACE LESSS GOO!🏆",
+    isLarge: true,
+  },
+  {
+    post_img: [hackuci2022, havefun],
+    date: "HACK @ UCI 2023 🌎",
+    description: "HACK @ UCI 2023: ANOTHER HACKATHON ANOTHER W!🏅",
+    isLarge: true,
+  },
+  {
+    post_img: [zotnfound_win, zotnfound_big],
+    date: "Venus Hack 2023 🌎",
+    description: "Venus Hack 2023: SECOND PLACE🏅",
+    isLarge: true,
+  },
+];
+
 export default function AboutPost() {
+  const [latest, setLatest] = useState(false);
+
+  const sortedPosts = latest ? postsData : [...postsData].reverse();
+
   return (
     <div className="all-posts">
-      <h3 style={{ fontWeight: "bold" }}>News Feed</h3>
-      {/* <div className="user-post">
-        <input
-          type="text"
-          style={{
-            width: "90%",
-            height: "5.5vh",
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <h3 style={{ fontWeight: "bold" }}>News Feed</h3>
+        <Button
+          onClick={() => {
+            setLatest(!latest);
           }}
-          defaultValue="What's on your mind?"
+        >
+          <span role="img" aria-label="recycle">
+            {latest ? "⬇" : "⬆"}
+          </span>
+        </Button>
+      </div>
+      {sortedPosts.map((post, index) => (
+        <Post
+          key={index}
+          post_img={post.post_img}
+          date={post.date}
+          description={post.description}
+          isLarge={post.isLarge || false}
         />
-        <div className="user-post-func">
-          <p>
-            add photos &nbsp; • &nbsp; tags friends &nbsp; • &nbsp;
-            feeling/activity
-          </p>
-          <button className="post-button">Post message</button>
-        </div>
-      </div> */}
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>August, 2021 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>UCI🎓: Major in Computer Science, Class of 2025</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic" src={school} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      {/* python */}
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>August, 2021 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>Python: My first language &#40; ICS-31 &#41;</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic" src={py} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>ZotHacks 2021 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>FIRST HACKATHON!</p>
-          <p>OHHH THAT'S HOW WEBSITE ARE MADE</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-big" src={first_hackathon} alt="school" />
-          <img className="post-pic-big" src={zelp} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>May 20, 2022 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>2ND Hackathon. didnt win but we had soo muchh fun </p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-md" src={venus} alt="school" />
-          <img className="post-pic-big" src={pter} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>Summer, 2022 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>I JUST LEARNED WEB DEV ONLINE!</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic" src={webdev} alt="school" />
-          <img className="post-pic-big" src={udemy} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>October, 2022 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>Developer at Commit The Change! Wohooooooooo!</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-big" src={ctc} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>Winter, 2022 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>Data Structure and Algorithm class IS HARDDDDD!!!😔</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic" src={cpp} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>Webjam 2022 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>Webjam 2022: FIRST PLACE LESSS GOO!🏆</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-big" src={firstplace} alt="school" />
-          <img className="post-pic-big" src={zotpals} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>HACK @ UCI 2023 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>HACK @ UCI 2023: ANOTHER HACKATHON ANOTHER W!🏅</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-big" src={hackuci2022} alt="school" />
-          <img className="post-pic-big" src={havefun} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
-
-      <div className="postings">
-        <div className="post-owner">
-          <img className="pfp-post" src={myselfpixel} alt="pfp" />
-          <div
-            style={{
-              marginLeft: "15px",
-            }}
-          >
-            <p style={{ fontWeight: "bold" }}>Dang Nguyen </p>
-            <p>Venus Hack 2023 🌎</p>
-          </div>
-        </div>
-
-        <div className="description">
-          <p>Venus Hack 2023: SECOND PLACE🏅</p>
-        </div>
-        <div
-          style={{
-            margin: "2% 0",
-            textAlign: "center",
-            background: "white",
-            padding: "3%",
-          }}
-        >
-          <img className="post-pic-big" src={zotnfound_win} alt="school" />
-          <img className="post-pic-big" src={zotnfound_big} alt="school" />
-        </div>
-        <p>Like &nbsp; • &nbsp; Comment &nbsp; • &nbsp; Share</p>
-      </div>
+      ))}
     </div>
   );
 }
