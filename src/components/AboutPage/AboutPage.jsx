@@ -73,7 +73,7 @@ export default function AboutPage({
                 <div className="info-title-box">
                   <p className="info-title">Programming:</p>
                   <p className="info-text">
-                    Python &nbsp; • &nbsp; Javascript &nbsp; • &nbsp; C++
+                    Python &nbsp; • &nbsp; Java &nbsp; • &nbsp; Typescript &nbsp; • &nbsp; C/C++
                   </p>
                 </div>
 

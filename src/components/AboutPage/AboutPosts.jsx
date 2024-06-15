@@ -17,6 +17,13 @@ import havefun from "../../images/havefun.png";
 import hackuci2022 from "../../images/hackuci2022.jpg";
 import zotnfound_big from "../../images/zotnfound_big.png";
 import zotnfound_win from "../../images/zotnfound_win.png";
+import zotnfound_icssc from "../../images/zotnfound_icssc.png";
+import s2t from "../../images/s2t.jpg";
+import s2t_cleanup from "../../images/s2t_cleanup.jpg";
+import IH_24 from "../../images/IH_24.jpg";
+import LAHacks from "../../images/LAHacks.jpg";
+import VH24 from "../../images/VH24.jpg";
+import coinbase from "../../images/coinbase.jpg";
 
 import Post from "./Posts/Post";
 
@@ -75,6 +82,43 @@ const postsData = [
     post_img: [zotnfound_win, zotnfound_big],
     date: "Venus Hack 2023 🌎",
     description: "Venus Hack 2023: SECOND PLACE🏅",
+    isLarge: true,
+  },
+  {
+    post_img: zotnfound_icssc,
+    date: "October 2023 🌎",
+    description:
+      "Launched Zotnfound and successfully pitched it to ICSSC, attracting 100+ sign-up users in the first 6 weeks!🚀🚀🚀",
+    isLarge: true,
+  },
+  {
+    post_img: [s2t, s2t_cleanup],
+    date: "Fall 2023 🌎",
+    description: "Tech Lead for Stand Up To Trash Project (CTC) 🤓",
+    isLarge: true,
+  },
+  {
+    post_img: IH_24,
+    date: "January 2024 🌎",
+    description: "Irvine Hack 2024 (6th Hackathon) 🏆🏆🏆",
+    isLarge: true,
+  },
+  {
+    post_img: LAHacks,
+    date: "April 2024 🌎",
+    description: "LA Hack 2024 (7th Hackathon) 🏙️🏙️🏙️",
+    isLarge: true,
+  },
+  {
+    post_img: VH24,
+    date: "May 2024 🌎",
+    description: "LA Hack 2024 (8th Hackathon) 🎁🎁🎁",
+    isLarge: true,
+  },
+  {
+    post_img: coinbase,
+    date: "Summer 2024 🌎",
+    description: "I'm a SWE Intern @ Coinbase this Summer!🚀",
     isLarge: true,
   },
 ];
